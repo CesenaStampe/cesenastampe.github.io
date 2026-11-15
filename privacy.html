@@ -47,7 +47,15 @@ p{margin:0}
 .hdr.sc{border-color:var(--line)}
 .hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);min-height:72px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.logo{width:48px;height:48px;transition:transform .6s var(--ease)}
+.logo{width:50px;height:50px;flex:none;overflow:visible;filter:drop-shadow(0 6px 10px rgba(29,63,160,.28))}
+.logo .bm-st{transform-origin:32px 32px;transform-box:view-box}
+.logo .bm-sh{transform-origin:32px 17px;transform-box:view-box;transition:transform .5s var(--ease)}
+@media (hover:hover) and (pointer:fine){.brand:hover .bm-sh{animation:bmsw .9s var(--ease)}.brand:hover b em::after{transform:scaleX(1)}}
+@keyframes bmsw{25%{transform:rotate(-9deg)}55%{transform:rotate(6deg)}80%{transform:rotate(-2deg)}}
+.brand b em{font-style:normal;color:var(--blue);position:relative}
+.brand b em::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:4px;border-radius:2px;background:var(--tq);transform:scaleX(.35);transform-origin:0 50%;transition:transform .45s var(--ease)}
+.hdr{box-shadow:0 0 0 rgba(14,26,61,0);transition:border-color .3s,box-shadow .3s}
+.hdr.sc{box-shadow:0 10px 30px -18px rgba(14,26,61,.35)}
 .r-bg{fill:#fff}.r-ln{fill:none;stroke:var(--blue);stroke-width:3}.r-tx{font:800 13px var(--fd);fill:var(--blue);letter-spacing:.06em}
 .r-hg{fill:none;stroke:var(--blue);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}.r-sh{fill:var(--blue)}
 .brand b{font:800 1.25rem/1 var(--fd);letter-spacing:-.01em;word-spacing:.08em}.brand small{display:block;font:500 .78rem/1.3 var(--fb);color:var(--mute);letter-spacing:0;word-spacing:0;margin-top:3px}
@@ -64,7 +72,7 @@ p{margin:0}
 .hero h1{font-size:clamp(2.3rem,5vw,4.3rem);margin:var(--s3) 0}
 .rot{display:block;color:var(--tq);height:1.05em;font-size:min(1em,8.6vw);overflow:hidden;position:relative}
 .rot i{position:absolute;left:0;top:0}
-.rot i{display:block;font-style:normal;white-space:nowrap;transition:transform .55s var(--ease-io),opacity .4s}
+.rot i{display:block;font-style:normal;white-space:nowrap;will-change:transform}
 .rot i.out{transform:translateY(-105%);opacity:0}.rot i.in0{transform:translateY(105%);opacity:0;transition:none}
 .hero .sub{font-size:clamp(1.05rem,1.6vw,1.25rem);color:rgba(255,255,255,.84);max-width:46ch}
 .hero .cta{display:flex;flex-wrap:wrap;gap:var(--s2);margin-top:var(--s4)}
@@ -193,6 +201,38 @@ section{position:relative}
 .hero-in .hi{opacity:0;transform:translateY(24px)}
 .hero-in.go .hi{opacity:1;transform:none;transition:opacity .7s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
 
+
+/* ===== v5: abbellimenti ===== */
+.fl{position:absolute;width:64px;height:64px;display:none;pointer-events:none;filter:drop-shadow(0 10px 14px rgba(6,16,50,.35));animation:bob 5s ease-in-out infinite}
+.fl0{left:2%;top:16%;transform:rotate(-14deg)}.fl1{right:4%;top:10%;width:56px;height:56px;animation-delay:-1.4s}.fl2{right:0;top:46%;width:46px;height:46px;animation-delay:-2.6s}.fl3{left:4%;bottom:6%;width:52px;height:52px;animation-delay:-3.4s}
+@keyframes bob{0%,100%{translate:0 0;rotate:-6deg}50%{translate:0 -12px;rotate:6deg}}
+@media (min-width:1100px){.fl{display:block}}
+.hero-in .fl{opacity:0}.hero-in.go .fl{opacity:1;transition:opacity .6s ease .9s}
+.rv-top{display:flex;align-items:center;gap:10px}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),#3a63e0);color:#fff;font:800 1.05rem var(--fd);flex:none}
+.rv:nth-child(2) .av{background:linear-gradient(135deg,#1f9a8f,var(--tq))}.rv:nth-child(3) .av{background:linear-gradient(135deg,#14204a,#3d4f8a)}
+.rv-st{color:#F2B630;letter-spacing:2px;font-size:.95rem}
+.rv .g{width:20px;height:20px;margin-left:auto}
+.rv{transition:transform .3s var(--ease),box-shadow .3s}
+@media (hover:hover) and (pointer:fine){.rv:hover{transform:translateY(-4px);box-shadow:0 18px 36px -22px rgba(14,26,61,.45)}}
+.foot.fx{background:var(--ink);color:rgba(255,255,255,.78);border-top:0;padding-block:var(--s8) calc(var(--s4) + 70px)}
+.foot.fx .wrap{display:block}
+.f-cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--s6)}
+.f-cols>div{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.f-cols a{color:#fff;text-decoration:none;padding:10px 0}
+.f-cols a:not(.brand){background:linear-gradient(var(--tq),var(--tq)) left bottom/0 2px no-repeat;transition:background-size .3s var(--ease)}
+@media (hover:hover) and (pointer:fine){.f-cols a:not(.brand):hover{background-size:100% 2px}}
+.f-h{font:700 .76rem/1 var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--tq);margin-bottom:10px}
+.foot .brand{display:flex;padding:0}.f-brand .brand b{color:#fff}.f-brand .brand b em{color:var(--tq)}.f-brand .brand small{color:rgba(255,255,255,.6)}
+.f-brand>p{margin-top:var(--s2);font-family:"Caveat",cursive;font-size:1.45rem;line-height:1.1;color:#fff;max-width:20ch}
+.f-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s2);align-items:center;margin-top:var(--s6);padding-top:var(--s3);border-top:1px solid rgba(255,255,255,.12);font-size:.88rem}
+.foot.fx .f-bot a,.foot.fx #calm{color:#fff}
+@media (min-width:721px){.foot.fx{padding-bottom:var(--s4)}}
+@media (max-width:900px){.f-cols{grid-template-columns:1fr 1fr}.f-brand{grid-column:1/-1}}
+@media (max-width:520px){.f-cols{grid-template-columns:1fr}}
+.grain{position:fixed;inset:0;z-index:35;pointer-events:none;opacity:.05;mix-blend-mode:multiply;display:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+@media (hover:hover) and (pointer:fine) and (min-width:900px){.grain{display:block}}
+html.calm .fl,html.calm .grain{animation:none!important}
 /* ===== v3 premium ===== */
 /* sipario */
 .intro{display:none}
@@ -288,8 +328,8 @@ html.is-intro .intro{display:grid;place-items:center;position:fixed;inset:0;z-in
 /* scritta gigante prima del piede */
 .bigw{margin:0;padding:var(--s8) 20px var(--s3);text-align:center;overflow:hidden;font:800 clamp(2.6rem,12.4vw,11.5rem)/1.12 var(--fd);letter-spacing:-.03em;word-spacing:.1em;white-space:nowrap}
 .bigw span{position:relative;display:inline-block;color:transparent;-webkit-text-stroke:2px var(--blue)}
-.bigw span::after{content:attr(data-t);position:absolute;left:0;top:0;color:var(--blue);-webkit-text-stroke:0;clip-path:inset(-30% 0 -40% 0)}
-.js .bigw:not(.in) span::after{clip-path:inset(-30% 100% -40% 0)}
+.bigw span::after{content:attr(data-t);position:absolute;left:0;top:0;color:var(--blue);-webkit-text-stroke:0;clip-path:inset(-30% -6% -40% -3%)}
+.js .bigw:not(.in) span::after{clip-path:inset(-30% 106% -40% -3%)}
 .bigw.in span::after{transition:clip-path 1.5s cubic-bezier(.77,0,.175,1) .2s}
 /* cursore a forma di racla */
 .cur{position:fixed;left:0;top:0;transform:translate3d(-200px,-200px,0);z-index:90;pointer-events:none;display:none;width:40px;height:40px;margin:-8px 0 0 -20px;transition:opacity .2s}
@@ -327,7 +367,7 @@ html.calm .bigw span::after{clip-path:none!important}html.calm .steps::before{tr
 html.calm *,html.calm *::before,html.calm *::after{animation:none!important;transition:none!important}
 html.calm [data-r],html.calm .hang,html.calm .hi,html.calm .qw{opacity:1!important;transform:none!important}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}.js [data-r],.js .hang,.hero-in .hi,.js .qw{opacity:1!important;transform:none!important}}
-.pv{padding-block:var(--s12)}.pv .wrap{max-width:760px}.pv h1{font-size:clamp(2.4rem,6vw,4rem);margin-bottom:var(--s4)}.pv h2{font-size:1.5rem;margin:var(--s4) 0 var(--s2)}.pv p{color:var(--ink2)}</style></head><body><header class="hdr sc"><div class="wrap"><a class="brand" href="./"><svg class="logo" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="arc-logo" d="M22 60a38 38 0 0 1 76 0"/></defs><circle cx="60" cy="60" r="58" class="r-bg"/><circle cx="60" cy="60" r="52" class="r-ln"/><path class="r-hg" d="M60 50v-4a4 4 0 1 0-4-4M60 50L42 58h36z"/><path class="r-sh" d="M50 60q10 6 20 0l11 5 4 10-7 3-2-5v24H44V73l-2 5-7-3 4-10z"/></svg><span><b>Cesena Stampe</b><small>Personalizzazione abbigliamento</small></span></a><a class="btn btn-blue" href="./"><span>Torna al sito</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></div></header><main class="pv"><div class="wrap"><h1>Privacy</h1><p>Questo sito presenta Cesena Stampe, Corso Cavour 108/A, 47521 Cesena (FC).</p>
-<h2>Dati raccolti</h2><p>Il sito non ha moduli e non raccoglie dati personali. Quando chiami o scrivi un'email, anche dalla sezione "Prova la tua maglia", il contatto parte dal tuo telefono o dalla tua posta. La maglia che crei nella sezione "Crea la tua maglia", comprese le immagini o i loghi che carichi, resta nel tuo browser e non viene inviata a nessuno finché non la mandi tu per email o WhatsApp.</p>
+.pv{padding-block:var(--s12)}.pv .wrap{max-width:760px}.pv h1{font-size:clamp(2.4rem,6vw,4rem);margin-bottom:var(--s4)}.pv h2{font-size:1.5rem;margin:var(--s4) 0 var(--s2)}.pv p{color:var(--ink2)}</style></head><body><header class="hdr sc"><div class="wrap"><a class="brand" href="./"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="bm-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d5be0"/><stop offset="1" stop-color="#14297a"/></linearGradient><radialGradient id="bm-l" cx=".3" cy=".25" r=".6"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs><circle cx="32" cy="32" r="31" fill="#3ED6D1"/><circle cx="32" cy="32" r="28" fill="url(#bm-g)"/><circle class="bm-st" cx="32" cy="32" r="24.6" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.1" stroke-dasharray="2.2 2.4"/><g class="bm-sh"><path d="M32 22.5v-2.6a2.7 2.7 0 1 0-2.7-2.7" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><path d="M32 22.5L21 27.4h22z" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><path d="M26.4 27.6q5.6 3.4 11.2 0l6.6 3 2.3 5.7-4 1.7-1.4-2.7V48H22.9V35.3l-1.4 2.7-4-1.7 2.3-5.7z" fill="#fff"/><rect x="27.2" y="36" width="9.6" height="2.6" rx="1.3" fill="#3ED6D1"/><rect x="28.6" y="40.2" width="6.8" height="1.8" rx=".9" fill="#1D3FA0" opacity=".55"/></g><circle cx="32" cy="32" r="28" fill="url(#bm-l)"/></svg><span><b>Cesena <em>Stampe</em></b><small>Stampa e personalizzazione · Cesena</small></span></a><a class="btn btn-blue" href="./"><span>Torna al sito</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></div></header><main class="pv"><div class="wrap"><h1>Privacy</h1><p>Questo sito presenta Cesena Stampe, Corso Cavour 108/A, 47521 Cesena (FC).</p>
+<h2>Dati raccolti</h2><p>Il sito non ha moduli e non raccoglie dati personali. Quando chiami o scrivi un'email, anche dalla sezione "Crea il tuo design", il contatto parte dal tuo telefono o dalla tua posta. La maglia che crei nella sezione "Crea il tuo design", comprese le immagini o i loghi che carichi, resta nel tuo browser e non viene inviata a nessuno finché non la mandi tu per email o WhatsApp.</p>
 <h2>Cookie</h2><p>Il sito non usa cookie di profilazione né statistiche. I caratteri sono caricati da Fontshare e da Google Fonts. La mappa di Google si carica solo se premi "Mostra la mappa", e da quel momento valgono le regole di Google.</p>
 <h2>Contatti</h2><p>Per qualsiasi domanda: cesenastampe@hotmail.com oppure 329 392 0038.</p></div></main><footer class="foot"><div class="wrap"><span>© 2026 Cesena Stampe · Corso Cavour 108/A, 47521 Cesena (FC)</span><a href="./">Torna al sito</a></div></footer></body></html>
