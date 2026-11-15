@@ -63,6 +63,7 @@ p{margin:0}
 .hero .kick{color:var(--tq)}
 .hero h1{font-size:clamp(2.3rem,5vw,4.3rem);margin:var(--s3) 0}
 .rot{display:block;color:var(--tq);height:1.05em;font-size:min(1em,8.6vw);overflow:hidden;position:relative}
+.rot i{position:absolute;left:0;top:0}
 .rot i{display:block;font-style:normal;white-space:nowrap;transition:transform .55s var(--ease-io),opacity .4s}
 .rot i.out{transform:translateY(-105%);opacity:0}.rot i.in0{transform:translateY(105%);opacity:0;transition:none}
 .hero .sub{font-size:clamp(1.05rem,1.6vw,1.25rem);color:rgba(255,255,255,.84);max-width:46ch}
@@ -118,30 +119,7 @@ section{position:relative}
 .rail-note{margin-top:var(--s3);color:var(--mute);font-size:.92rem}
 @media (max-width:980px){.hangs{grid-template-columns:repeat(4,1fr);row-gap:var(--s4)}.rail-bar{display:none}.hangs{margin-top:0}}
 @media (max-width:520px){.hangs{grid-template-columns:repeat(2,1fr)}.tag{min-height:132px}}
-/* prova la tua maglia */
-.lab{background:var(--white);border-block:1px solid var(--line)}
-.lab-g{display:grid;grid-template-columns:1fr 1fr;gap:var(--s8);align-items:center}
-.lab-prev{position:relative;background:var(--paper);border-radius:16px;aspect-ratio:1/1.02;display:grid;place-items:center;overflow:hidden}
-.lab-prev::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,#fff,transparent 70%)}
-.lab-prev svg{position:relative;width:78%;filter:drop-shadow(0 24px 30px rgba(14,26,61,.25));transition:transform .4s var(--ease)}
-.lab-prev .side{position:absolute;left:var(--s2);top:var(--s2);font:700 .72rem/1 var(--fb);letter-spacing:.12em;text-transform:uppercase;background:#fff;padding:7px 10px;border-radius:99px;border:1px solid var(--line)}
-.lab-prev.flip svg{animation:flip .5s var(--ease)}
-@keyframes flip{0%{transform:scaleX(1)}50%{transform:scaleX(.05)}100%{transform:scaleX(1)}}
-.ptxt{font-family:var(--fd);font-weight:800;letter-spacing:.01em}
-.ctl{display:grid;gap:var(--s3)}
-.ctl label,.ctl .lb{display:block;font:700 .8rem/1 var(--fb);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:10px}
-.segs{display:flex;flex-wrap:wrap;gap:8px}
-.seg{min-height:46px;padding:0 16px;border-radius:var(--r);border:1.5px solid var(--line);background:#fff;cursor:pointer;font-weight:700;transition:background .2s,border-color .2s,transform .16s var(--ease)}
-.seg.on{background:var(--ink);border-color:var(--ink);color:#fff}.seg:active{transform:scale(.97)}
-.sws{display:flex;flex-wrap:wrap;gap:10px}
-.sw{width:46px;height:46px;border-radius:50%;border:2px solid var(--line);background:var(--c);cursor:pointer;position:relative;transition:transform .16s var(--ease)}
-.sw.on{box-shadow:0 0 0 3px #fff,0 0 0 5px var(--ink)}.sw:active{transform:scale(.94)}
-.inp{width:100%;min-height:54px;border:1.5px solid var(--line);border-radius:var(--r);padding:0 16px;font:700 1.1rem var(--fb);color:var(--ink);background:#fff}
-.inp:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,63,160,.18)}
-.cnt{font-size:.82rem;color:var(--mute);margin-top:6px;font-variant-numeric:tabular-nums}
-.lab-cta{display:flex;flex-wrap:wrap;gap:var(--s2);margin-top:var(--s1)}
-.lab-fine{font-size:.88rem;color:var(--mute)}
-@media (max-width:900px){.lab-g{grid-template-columns:1fr;gap:var(--s4)}.lab-prev{aspect-ratio:1/.86}.lab-prev svg{width:62%}}
+/* editor */%%DCSS%%
 /* citazione */
 .quote{background:var(--tq);color:var(--ink);overflow:hidden}
 .quote .wrap{padding-block:var(--s12);display:grid;grid-template-columns:auto 1fr;gap:var(--s6);align-items:center}
@@ -213,6 +191,6 @@ html.calm *,html.calm *::before,html.calm *::after{animation:none!important;tran
 html.calm [data-r],html.calm .hang,html.calm .hi,html.calm .qw{opacity:1!important;transform:none!important}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}.js [data-r],.js .hang,.hero-in .hi,.js .qw{opacity:1!important;transform:none!important}}
 .pv{padding-block:var(--s12)}.pv .wrap{max-width:760px}.pv h1{font-size:clamp(2.4rem,6vw,4rem);margin-bottom:var(--s4)}.pv h2{font-size:1.5rem;margin:var(--s4) 0 var(--s2)}.pv p{color:var(--ink2)}</style></head><body><header class="hdr sc"><div class="wrap"><a class="brand" href="./"><svg class="logo" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="arc-logo" d="M22 60a38 38 0 0 1 76 0"/></defs><circle cx="60" cy="60" r="58" class="r-bg"/><circle cx="60" cy="60" r="52" class="r-ln"/><path class="r-hg" d="M60 50v-4a4 4 0 1 0-4-4M60 50L42 58h36z"/><path class="r-sh" d="M50 60q10 6 20 0l11 5 4 10-7 3-2-5v24H44V73l-2 5-7-3 4-10z"/></svg><span><b>Cesena Stampe</b><small>Personalizzazione abbigliamento</small></span></a><a class="btn btn-blue" href="./"><span>Torna al sito</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></div></header><main class="pv"><div class="wrap"><h1>Privacy</h1><p>Questo sito presenta Cesena Stampe, Corso Cavour 108/A, 47521 Cesena (FC).</p>
-<h2>Dati raccolti</h2><p>Il sito non ha moduli e non raccoglie dati personali. Quando chiami o scrivi un'email, anche dalla sezione "Prova la tua maglia", il contatto parte dal tuo telefono o dalla tua posta. La scritta che provi sulla maglia resta nel tuo browser e non viene inviata a nessuno finché non mandi tu l'email.</p>
-<h2>Cookie</h2><p>Il sito non usa cookie di profilazione né statistiche. I caratteri sono caricati da Fontshare. La mappa di Google si carica solo se premi "Mostra la mappa", e da quel momento valgono le regole di Google.</p>
+<h2>Dati raccolti</h2><p>Il sito non ha moduli e non raccoglie dati personali. Quando chiami o scrivi un'email, anche dalla sezione "Prova la tua maglia", il contatto parte dal tuo telefono o dalla tua posta. La maglia che crei nella sezione "Crea la tua maglia", comprese le immagini o i loghi che carichi, resta nel tuo browser e non viene inviata a nessuno finché non la mandi tu per email o WhatsApp.</p>
+<h2>Cookie</h2><p>Il sito non usa cookie di profilazione né statistiche. I caratteri sono caricati da Fontshare e, quando arrivi all'editor della maglia, da Google Fonts. La mappa di Google si carica solo se premi "Mostra la mappa", e da quel momento valgono le regole di Google.</p>
 <h2>Contatti</h2><p>Per qualsiasi domanda: cesenastampe@hotmail.com oppure 329 392 0038.</p></div></main><footer class="foot"><div class="wrap"><span>© 2026 Cesena Stampe · Corso Cavour 108/A, 47521 Cesena (FC)</span><a href="./">Torna al sito</a></div></footer></body></html>
