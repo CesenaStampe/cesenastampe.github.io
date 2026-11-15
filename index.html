@@ -5,8 +5,8 @@
 <meta property="og:url" content="https://cesenastampe.github.io/"><meta property="og:image" content="https://cesenastampe.github.io/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.png" sizes="32x32"><link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://cdn.fontshare.com" crossorigin><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700&display=swap"></noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"></noscript>
-<script>document.documentElement.classList.add('js')</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Store", "name": "Cesena Stampe", "image": "https://cesenastampe.github.io/og.jpg", "url": "https://cesenastampe.github.io/", "telephone": "+393293920038", "email": "cesenastampe@hotmail.com", "address": {"@type": "PostalAddress", "streetAddress": "Corso Cavour 108/A", "postalCode": "47521", "addressLocality": "Cesena", "addressRegion": "FC", "addressCountry": "IT"}, "geo": {"@type": "GeoCoordinates", "latitude": 44.1422988, "longitude": 12.2496382}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "09:00", "closes": "12:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "15:30", "closes": "19:30"}], "sameAs": ["https://www.instagram.com/cesena.stampe/"]}</script>
+<link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://cdn.fontshare.com" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700&display=swap"></noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"></noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"></noscript>
+<script>document.documentElement.classList.add('js')</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Store", "name": "Cesena Stampe", "image": "https://cesenastampe.github.io/og.jpg", "url": "https://cesenastampe.github.io/", "telephone": "+393293920038", "email": "cesenastampe@hotmail.com", "address": {"@type": "PostalAddress", "streetAddress": "Corso Cavour 108/A", "postalCode": "47521", "addressLocality": "Cesena", "addressRegion": "FC", "addressCountry": "IT"}, "geo": {"@type": "GeoCoordinates", "latitude": 44.1422988, "longitude": 12.2496382}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "09:00", "closes": "12:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "15:30", "closes": "19:30"}], "sameAs": ["https://www.instagram.com/cesena.stampe/"]}</script><script>try{if(!sessionStorage.getItem('cs-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&localStorage.getItem('cs-calm')!=='1'){document.documentElement.classList.add('is-intro');sessionStorage.setItem('cs-intro','1')}}catch(e){}</script>
 <style>
 :root{--paper:#F5F7FB;--white:#fff;--ink:#0E1A3D;--ink2:rgba(14,26,61,.74);--mute:rgba(14,26,61,.6);--blue:#1D3FA0;--blue2:#16317d;--tq:#3ED6D1;--tq2:#2bbdb8;--line:rgba(14,26,61,.12);
 --fd:"Cabinet Grotesk","Arial Black",system-ui,sans-serif;--fb:"Satoshi",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -87,7 +87,12 @@ p{margin:0}
 .note{position:absolute;right:-2%;bottom:6%;font:700 .82rem/1.25 var(--fb);background:#fff;color:var(--ink);padding:10px 14px;border-radius:var(--r);transform:rotate(3deg);box-shadow:0 14px 30px -12px rgba(0,0,0,.45);max-width:16ch}
 @media (max-width:900px){.hero .wrap{grid-template-columns:1fr;min-height:0;gap:var(--s4);padding-block:var(--s6) var(--s8)}.shirt-w{width:min(250px,64%)}.note{display:none}.stage .rail{top:0}}
 /* nastro */
-.tape{background:var(--tq);color:var(--ink);overflow:hidden;border-block:2px solid var(--ink)}
+.tapes{position:relative;height:150px;overflow:hidden;background:var(--paper)}
+.tape{position:absolute;left:-4%;right:-4%;top:50%;overflow:hidden;border-block:2px solid var(--ink)}
+.tape.t1{background:var(--tq);color:var(--ink);transform:translateY(-50%) rotate(-3deg);z-index:2;box-shadow:0 10px 24px -14px rgba(14,26,61,.5)}
+.tape.t2{background:var(--ink);color:#fff;transform:translateY(-50%) rotate(2.4deg)}
+.tape.t2 ul{animation-direction:reverse;animation-duration:40s}.tape.t2 li::after{content:"●";color:var(--tq);font-size:.6em}
+@media (max-width:720px){.tapes{height:116px}}
 .tape ul{display:flex;gap:var(--s4);list-style:none;margin:0;padding:14px 0;width:max-content;animation:tape 32s linear infinite;font:800 1.15rem/1 var(--fd);text-transform:uppercase;letter-spacing:.02em}
 .tape li{display:flex;align-items:center;gap:var(--s4);white-space:nowrap}.tape li::after{content:"✳";font-size:.9em}
 @keyframes tape{to{transform:translateX(-50%)}}
@@ -205,6 +210,17 @@ section{position:relative}
 .dz-cta .btn{flex:1 1 200px;letter-spacing:.04em;padding:0 18px}
 .dlink{all:unset;cursor:pointer;text-decoration:underline;color:var(--ink);font-weight:700}
 .dpan [disabled]{opacity:.45;pointer-events:none}
+.dtpls{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:10px}
+.dtpl{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 8px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--paper);cursor:pointer;font-weight:700;font-size:.84rem;line-height:1.2;text-align:center;transition:transform .2s var(--ease),border-color .2s,box-shadow .2s}
+.dtpl svg{width:100%;height:auto;aspect-ratio:600/660;pointer-events:none}
+.dtpl:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.dtpl:hover{border-color:var(--blue);transform:translateY(-3px);box-shadow:0 12px 24px -16px rgba(14,26,61,.5)}}
+.d-env{position:absolute;left:50%;top:38%;width:min(38%,200px);pointer-events:none;z-index:3}
+.d-env svg{width:100%;overflow:visible}
+.d-env .eb{fill:#fff;stroke:#0E1A3D;stroke-width:3}.d-env .ef{fill:none;stroke:#0E1A3D;stroke-width:3;stroke-linejoin:round}
+.d-env .fl{fill:#3ED6D1;stroke:#0E1A3D;stroke-width:3;stroke-linejoin:round;transform-origin:60px 12px;transform-box:view-box;animation:flap .35s .45s cubic-bezier(.77,0,.175,1) both}
+@keyframes flap{from{transform:scaleY(-1)}to{transform:none}}
+.d-toast{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);background:var(--ink);color:#fff;font-weight:700;font-size:.9rem;padding:10px 16px;border-radius:10px;white-space:nowrap;pointer-events:none;z-index:4}
 @media (max-width:980px){.dz{grid-template-columns:1fr}.dz-stage{top:72px;z-index:6;box-shadow:0 12px 24px -18px rgba(14,26,61,.5)}#dsvg{max-height:40vh}.dz-hint{display:none}.dz-panel *{scroll-margin-top:calc(72px + 30vh + 130px)}.dz-stage .dz-tabs{border-top:1px solid var(--line);border-bottom:0;padding:8px}#dsvg{max-height:30vh}.dz-bar{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;justify-content:flex-start}.dz-bar::-webkit-scrollbar{display:none}.dz-bar .dib{flex:none;width:40px;height:40px}.dz-side{order:-1}.dz-side .dseg{min-height:40px;padding:0 12px}.in-dz .mbar{transform:translateY(140%)!important}}
 @media (max-width:520px){.dz-bar{padding:8px}.dib{width:42px;height:42px}.dpan{padding:var(--s2)}.dz-hint{font-size:.8rem}}
 
@@ -275,17 +291,158 @@ section{position:relative}
 .js [data-r].in{opacity:1;transform:none}
 .hero-in .hi{opacity:0;transform:translateY(24px)}
 .hero-in.go .hi{opacity:1;transform:none;transition:opacity .7s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+
+/* ===== v3 premium ===== */
+/* sipario */
+.intro{display:none}
+html.is-intro .intro{display:grid;place-items:center;position:fixed;inset:0;z-index:100;background:var(--blue);color:#fff;clip-path:inset(0 0 0 0);animation:introUp .62s cubic-bezier(.77,0,.175,1) .8s forwards}
+.intro-w{position:relative}
+.intro-in{display:grid;justify-items:center;gap:14px;padding:8px 24px;clip-path:inset(0 0 100% 0);animation:introTx .56s cubic-bezier(.77,0,.175,1) .1s forwards}
+.intro-logo{width:92px;height:92px}
+.intro p{margin:0;font:800 clamp(1.7rem,5vw,2.5rem)/1 var(--fd);letter-spacing:-.01em;word-spacing:.08em}
+.intro-sq{position:absolute;left:-10px;right:-10px;top:0;height:8px;border-radius:4px;background:var(--tq);animation:introSq .56s cubic-bezier(.77,0,.175,1) .1s forwards}
+@keyframes introTx{to{clip-path:inset(0 0 0 0)}}
+@keyframes introSq{to{top:100%;opacity:0}}
+@keyframes introUp{to{clip-path:inset(0 0 100% 0);visibility:hidden}}
+/* barra di avanzamento */
+.prog{position:fixed;left:0;top:0;height:3px;width:100%;z-index:60;background:var(--tq);transform-origin:0 50%;transform:scaleX(0);pointer-events:none}
+/* maglia dell'hero: stampa a strati */
+.shirt-b{all:unset;display:block;width:100%;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.shirt-b:focus-visible{outline:3px solid var(--tq);outline-offset:6px;border-radius:12px}
+.hshirt .l1,.hshirt .l2{font-family:var(--fd);font-weight:800}
+.hshirt .reg{fill:none;stroke:rgba(110,122,156,.8);stroke-width:.9;opacity:0}
+.hshirt .sq{fill:var(--tq)}
+/* note scritte a mano */
+.hn{position:absolute;display:none;margin:0;font:700 1.5rem/1.02 "Caveat","Comic Sans MS",cursive;color:#fff;pointer-events:none;word-spacing:normal;letter-spacing:0;z-index:2}
+.hn svg{width:96px;height:56px;fill:none;stroke:var(--tq);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.hn1{left:-7%;top:50%;transform:rotate(-7deg)}.hn1 svg{margin:2px 0 0 34px}
+.hn2{right:-9%;bottom:3%;transform:rotate(4deg);text-align:right;max-width:12ch;color:var(--tq)}.hn2 svg{margin:0 0 2px auto;stroke:#fff}
+@media (min-width:1100px){.hn{display:block}}
+.js .hn path{stroke-dasharray:1;stroke-dashoffset:1}
+.hero-in .hn{opacity:0}
+.hero-in.go .hn{opacity:1;transition:opacity .5s ease 1s}.hero-in.go .hn path{stroke-dashoffset:0;transition:stroke-dashoffset .9s var(--ease) 1.2s}
+/* titoli a retino */
+@property --dot{syntax:'<length>';inherits:false;initial-value:6px}
+.js h2[data-r]{padding-bottom:.12em;margin-bottom:-.12em}
+.js h2[data-r].in{-webkit-mask:radial-gradient(circle,#000 var(--dot),transparent calc(var(--dot) + .7px)) 0 0/7px 7px;mask:radial-gradient(circle,#000 var(--dot),transparent calc(var(--dot) + .7px)) 0 0/7px 7px;animation:retino 1.3s cubic-bezier(.5,0,.2,1) var(--d,0s) both}
+@keyframes retino{from{--dot:.3px}to{--dot:6px}}
+/* icone dei capi che si disegnano */
+.js .tag .ico *{stroke-dasharray:1;stroke-dashoffset:1}
+.hangs.in .tag .ico *{stroke-dashoffset:0;transition:stroke-dashoffset 1.1s var(--ease) calc(var(--i)*70ms + .35s)}
+@media (hover:hover) and (pointer:fine){.hang-b:not([data-capo=""]):hover .ico{animation:wig .5s var(--ease)}}
+@keyframes wig{30%{transform:rotate(-8deg) scale(1.06)}65%{transform:rotate(5deg)}}
+/* come funziona */
+.how{background:var(--ink);color:#fff}
+.how .kick{color:var(--tq)}.how .sec-h p{color:rgba(255,255,255,.76)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3);position:relative}
+.steps::before{content:"";position:absolute;left:10%;right:10%;top:106px;height:2px;background:repeating-linear-gradient(90deg,var(--tq) 0 10px,transparent 10px 18px);transform-origin:0 50%;transform:scaleX(0);transition:transform 1.5s var(--ease) .3s}
+.steps.in::before{transform:none}
+.step{position:relative;background:#16244f;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:var(--s3);display:flex;flex-direction:column;gap:10px;transition:border-color .3s,transform .3s var(--ease)}
+@media (hover:hover) and (pointer:fine){.step:hover{border-color:rgba(62,214,209,.6);transform:translateY(-4px)}}
+.sn{font:800 .85rem/1 var(--fb);letter-spacing:.14em;color:var(--tq)}
+.si{width:96px;height:96px;fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;margin:2px 0 4px;overflow:visible}
+.step h3{font-size:1.55rem;word-spacing:.06em}.step p{color:rgba(255,255,255,.76)}
+.si *{transform-box:view-box}
+.si-idea .rays{stroke:var(--tq);transform-origin:48px 44px;opacity:.3}.si-idea .fil{stroke:var(--tq)}
+.si-disegna .scr{stroke:var(--tq);stroke-dasharray:1;stroke-dashoffset:1}.si-disegna .pen{fill:#16244f;transform:translate(-21px,-22px)}
+.si-stampa .mesh{stroke:rgba(255,255,255,.3);stroke-dasharray:2 3}.si-stampa .inkf{fill:var(--tq);stroke:none;clip-path:inset(0 100% 0 0)}.si-stampa .rk{fill:#16244f}
+.si-ritira .aw{stroke:var(--tq)}.si-ritira .bag{fill:var(--tq);stroke:#fff;transform-origin:72px 54px}
+.how.live .si-idea .rays{animation:rays 2.6s ease-in-out infinite}.how.live .si-idea .fil{animation:fil 2.6s ease-in-out infinite}
+.how.live .si-disegna .scr{animation:scr 3s var(--ease) infinite}.how.live .si-disegna .pen{animation:pen 3s var(--ease) infinite}
+.how.live .si-stampa .rk{animation:rk 2.8s cubic-bezier(.77,0,.175,1) infinite}.how.live .si-stampa .inkf{animation:inkf 2.8s cubic-bezier(.77,0,.175,1) infinite}
+.how.live .si-ritira .bag{animation:bag 2.4s ease-in-out infinite}.how.live .si-ritira .aw{animation:aw 2.4s ease-in-out infinite}
+@keyframes rays{0%,100%{opacity:.25;transform:scale(.92)}50%{opacity:1;transform:scale(1.04)}}
+@keyframes fil{0%,100%{stroke:#fff}50%{stroke:var(--tq)}}
+@keyframes scr{0%{stroke-dashoffset:1;opacity:1}55%{stroke-dashoffset:0;opacity:1}85%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+@keyframes pen{0%{transform:translate(-21px,-22px)}15%{transform:translate(-15px,-25px)}30%{transform:translate(-9px,-20px)}42%{transform:translate(-3px,-25px)}55%{transform:translate(3px,-21px)}80%{transform:translate(3px,-21px)}100%{transform:translate(-21px,-22px)}}
+@keyframes rk{0%{transform:translateX(0)}50%{transform:translateX(58px)}70%{transform:translateX(58px)}100%{transform:translateX(0)}}
+@keyframes inkf{0%{clip-path:inset(0 100% 0 0);opacity:1}50%{clip-path:inset(0 0 0 0);opacity:1}85%{clip-path:inset(0 0 0 0);opacity:1}100%{clip-path:inset(0 0 0 0);opacity:0}}
+@keyframes bag{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+@keyframes aw{0%,100%{transform:none}50%{transform:translateY(2px)}}
+@media (max-width:980px){.steps{grid-template-columns:1fr 1fr}.steps::before{display:none}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}.step{display:grid;grid-template-columns:80px 1fr;column-gap:16px;align-items:start}.step .sn{grid-column:2}.step .si{grid-row:1/span 3;grid-column:1;width:80px;height:80px}.step h3,.step p{grid-column:2}}
+/* insegna al neon */
+.dove-h{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--s3);flex-wrap:wrap}
+.neon{display:none;flex-direction:column;align-items:center;transform-origin:50% 0;animation:sway 5s ease-in-out infinite}
+.js .neon{display:flex}
+.neon .chain{width:110px;height:26px;fill:none;stroke:rgba(255,255,255,.4);stroke-width:2}
+.neon .tube{display:block;margin-top:-2px;padding:10px 18px 9px;border:2px solid rgba(255,255,255,.2);border-radius:14px;font:800 1.45rem/1 var(--fd);letter-spacing:.12em;text-transform:uppercase;color:rgba(255,150,150,.55);text-shadow:0 0 6px rgba(255,90,90,.35);background:rgba(255,255,255,.03)}
+.neon.open .tube{color:#effff6;border-color:#8cffc4;text-shadow:0 0 4px #45d483,0 0 14px #45d483,0 0 30px rgba(69,212,131,.8);box-shadow:0 0 10px rgba(69,212,131,.7),inset 0 0 10px rgba(69,212,131,.45)}
+.neon.open.in .tube{animation:neonOn 1.5s steps(1,end) .2s both}
+@keyframes neonOn{0%,10%,22%,38%{opacity:.2}5%,16%,30%,100%{opacity:1}}
+/* mappa cucita */
+.mapart{position:absolute;inset:0;width:100%;height:100%}
+.mapart .streets{fill:none;stroke:rgba(255,255,255,.07);stroke-width:16;stroke-linecap:round}
+.mapart .stitch{fill:none;stroke:var(--tq);stroke-width:3;stroke-dasharray:9 7;stroke-linecap:round}
+.mapart .mkp{stroke-dasharray:1;stroke-dashoffset:0}
+.mapart .pin{fill:var(--tq)}.mapart .pin circle{fill:var(--ink)}
+.js .mapbox:not(.in) .mkp{stroke-dashoffset:1}.js .mapbox:not(.in) .pin{opacity:0;transform:translateY(-26px)}
+.mapbox.in .mkp{transition:stroke-dashoffset 1.6s var(--ease) .2s}.mapbox.in .pin{transition:opacity .3s 1.5s,transform .6s cubic-bezier(.34,1.56,.64,1) 1.5s}
+.mapbox button{position:relative;z-index:1;padding-top:var(--s8)}
+/* stelle a timbro */
+.stamp i{display:inline-block;font-style:normal}
+.js .score .stamp i{opacity:0}
+.score.in .stamp i{animation:stamp .52s cubic-bezier(.23,1,.32,1) both;animation-delay:calc(.35s + var(--k)*.13s)}
+@keyframes stamp{0%{opacity:0;transform:scale(2.6) rotate(-20deg)}55%{opacity:1;transform:scale(.86) rotate(3deg)}100%{opacity:1;transform:none}}
+/* scritta gigante prima del piede */
+.bigw{margin:0;padding:var(--s8) 20px var(--s3);text-align:center;overflow:hidden;font:800 clamp(2.6rem,12.4vw,11.5rem)/1.12 var(--fd);letter-spacing:-.03em;word-spacing:.1em;white-space:nowrap}
+.bigw span{position:relative;display:inline-block;color:transparent;-webkit-text-stroke:2px var(--blue)}
+.bigw span::after{content:attr(data-t);position:absolute;left:0;top:0;color:var(--blue);-webkit-text-stroke:0;clip-path:inset(-30% 0 -40% 0)}
+.js .bigw:not(.in) span::after{clip-path:inset(-30% 100% -40% 0)}
+.bigw.in span::after{transition:clip-path 1.5s cubic-bezier(.77,0,.175,1) .2s}
+/* cursore a forma di racla */
+.cur{position:fixed;left:0;top:0;transform:translate3d(-200px,-200px,0);z-index:90;pointer-events:none;display:none;width:40px;height:40px;margin:-8px 0 0 -20px;transition:opacity .2s}
+html.has-cur .cur{display:block}
+.cur svg{width:40px;height:40px;fill:var(--tq);stroke:var(--ink);stroke-width:2;stroke-linejoin:round;transition:transform .22s var(--ease);overflow:visible}
+.cur .ink{fill:none;stroke:var(--tq);stroke-width:3;stroke-linecap:round;opacity:0;transition:opacity .2s}
+.cur b{position:absolute;left:32px;top:28px;font:700 .72rem/1 var(--fb);letter-spacing:.1em;text-transform:uppercase;background:var(--ink);color:#fff;padding:7px 9px;border-radius:6px;opacity:0;transform:scale(.8);transform-origin:0 0;transition:opacity .2s,transform .22s var(--ease);white-space:nowrap}
+.cur.hot svg{transform:rotate(-18deg) scale(1.12)}.cur.hot .ink{opacity:1}
+.cur.lab b{opacity:1;transform:none}.cur.down svg{transform:scale(.92,.8)}.cur.off{opacity:0}
+html.has-cur body,html.has-cur a:not(.dz *),html.has-cur button:not(.dz *),html.has-cur label:not(.dz *){cursor:none}
+html.has-cur .dz{cursor:auto}
+/* menu del telefono */
+.mnu{display:none;flex:none;width:48px;height:48px;border-radius:10px;border:1.5px solid var(--line);background:#fff;cursor:pointer;position:relative;padding:0}
+.mnu span{position:absolute;left:13px;right:13px;height:2.5px;border-radius:2px;background:var(--ink)}
+.mnu span:nth-child(1){top:18px}.mnu span:nth-child(2){top:27px;right:19px}
+@media (max-width:960px){.mnu{display:block}}
+.mpanel{position:fixed;inset:0;z-index:80;background:var(--blue);color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:calc(var(--cy,20px) + 76px) 24px calc(28px + env(safe-area-inset-bottom));clip-path:circle(0 at var(--ox,90%) var(--oy,40px));transition:clip-path .55s cubic-bezier(.77,0,.175,1);overflow-y:auto}
+.mpanel.open{clip-path:circle(150% at var(--ox,90%) var(--oy,40px))}
+.mclose{position:absolute;left:var(--cx,auto);top:var(--cy,20px);right:auto;width:48px;height:48px;border-radius:10px;border:1.5px solid rgba(255,255,255,.35);background:transparent;cursor:pointer;padding:0}
+.mclose span{position:absolute;left:12px;right:12px;top:22.75px;height:2.5px;background:#fff;border-radius:2px}.mclose span:first-child{transform:rotate(45deg)}.mclose span:last-child{transform:rotate(-45deg)}
+.mlinks{display:flex;flex-direction:column;gap:2px}
+.mlinks a{display:flex;align-items:baseline;gap:14px;font:800 clamp(2rem,9vw,3rem)/1.1 var(--fd);color:#fff;text-decoration:none;padding:8px 0;word-spacing:.08em;opacity:0;transform:translateY(18px);transition:opacity .4s,transform .5s var(--ease)}
+.mlinks a i{font:700 .78rem/1 var(--fb);font-style:normal;color:var(--tq);letter-spacing:.12em}
+.mpanel.open .mlinks a{opacity:1;transform:none}
+.mpanel.open .mlinks a:nth-child(1){transition-delay:.18s}.mpanel.open .mlinks a:nth-child(2){transition-delay:.23s}.mpanel.open .mlinks a:nth-child(3){transition-delay:.28s}.mpanel.open .mlinks a:nth-child(4){transition-delay:.33s}.mpanel.open .mlinks a:nth-child(5){transition-delay:.38s}
+.mfoot{display:grid;gap:8px;margin-top:var(--s4);color:rgba(255,255,255,.8)}
+.mtel{font:800 1.9rem/1 var(--fd);color:var(--tq);text-decoration:none;padding:8px 0}
+.mfoot a{color:#fff}.mfoot .now{margin:0}.mfoot p a{display:inline-block;padding:10px 0}
+html.mopen{overflow:hidden}
+/* calma e movimento ridotto */
+html.calm h2[data-r]{-webkit-mask:none!important;mask:none!important}
+html.calm .stamp i,html.calm .hn{opacity:1!important}html.calm .tag .ico *,html.calm .hn path,html.calm .mapart .mkp{stroke-dashoffset:0!important}html.calm .mapart .pin{opacity:1!important;transform:none!important}
+html.calm .bigw span::after{clip-path:none!important}html.calm .steps::before{transform:none!important}html.calm .mlinks a{opacity:1;transform:none}html.calm .intro{display:none!important}
+@media (prefers-reduced-motion:reduce){h2[data-r]{-webkit-mask:none!important;mask:none!important}.stamp i,.hn{opacity:1!important}.tag .ico *,.hn path,.mapart .mkp{stroke-dashoffset:0!important}.mapart .pin{opacity:1!important;transform:none!important}.bigw span::after{clip-path:none!important}.steps::before{transform:none!important}.mlinks a{opacity:1!important;transform:none!important}.intro{display:none!important}}
 html.calm *,html.calm *::before,html.calm *::after{animation:none!important;transition:none!important}
 html.calm [data-r],html.calm .hang,html.calm .hi,html.calm .qw{opacity:1!important;transform:none!important}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}.js [data-r],.js .hang,.hero-in .hi,.js .qw{opacity:1!important;transform:none!important}}
 </style></head><body>
 <a class="skip" href="#main">Vai al contenuto</a>
+<div class="intro" aria-hidden="true"><div class="intro-w"><div class="intro-in"><svg class="intro-logo" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="arc-intro-logo" d="M22 60a38 38 0 0 1 76 0"/></defs><circle cx="60" cy="60" r="58" class="r-bg"/><circle cx="60" cy="60" r="52" class="r-ln"/><path class="r-hg" d="M60 50v-4a4 4 0 1 0-4-4M60 50L42 58h36z"/><path class="r-sh" d="M50 60q10 6 20 0l11 5 4 10-7 3-2-5v24H44V73l-2 5-7-3 4-10z"/></svg><p>Cesena Stampe</p></div><span class="intro-sq"></span></div></div>
+<div class="prog" aria-hidden="true"></div>
+<div class="cur off" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M15 17V8h10v9"/><rect x="5" y="17" width="30" height="9" rx="2.5"/><path class="ink" d="M7 29h26"/></svg><b>Provala</b></div>
 <div class="info"><div class="wrap"><span class="st" data-stato><i class="dot"></i><span class="t">Lun–sab 9–12:30 · 15:30–19:30</span></span><span class="ad">Corso Cavour 108/A, Cesena</span><a href="tel:+393293920038">329 392 0038</a></div></div>
 <header class="hdr"><div class="wrap">
  <a class="brand" href="#top" aria-label="Cesena Stampe, torna su"><svg class="logo" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="arc-logo" d="M22 60a38 38 0 0 1 76 0"/></defs><circle cx="60" cy="60" r="58" class="r-bg"/><circle cx="60" cy="60" r="52" class="r-ln"/><path class="r-hg" d="M60 50v-4a4 4 0 1 0-4-4M60 50L42 58h36z"/><path class="r-sh" d="M50 60q10 6 20 0l11 5 4 10-7 3-2-5v24H44V73l-2 5-7-3 4-10z"/></svg><span><b>Cesena Stampe</b><small>Personalizzazione abbigliamento</small></span></a>
- <nav class="nav" aria-label="Sezioni"><a href="#capi">Cosa stampiamo</a><a href="#prova">Prova la tua maglia</a><a href="#recensioni">Recensioni</a><a href="#dove">Orari e dove</a></nav>
+ <nav class="nav" aria-label="Sezioni"><a href="#capi">Cosa stampiamo</a><a href="#come">Come funziona</a><a href="#prova">Crea la tua maglia</a><a href="#recensioni">Recensioni</a><a href="#dove">Orari e dove</a></nav>
  <a class="btn btn-go" href="tel:+393293920038"><span>Chiama Luda</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+ <button type="button" class="mnu" aria-expanded="false" aria-controls="mpanel"><span></span><span></span><b class="sr">Apri il menu</b></button>
 </div></header>
+<div class="mpanel" id="mpanel" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+ <button type="button" class="mclose" aria-label="Chiudi il menu"><span></span><span></span></button>
+ <nav class="mlinks" aria-label="Menu del telefono"><a href="#capi"><i>01</i>Cosa stampiamo</a><a href="#come"><i>02</i>Come funziona</a><a href="#prova"><i>03</i>Crea la tua maglia</a><a href="#recensioni"><i>04</i>Recensioni</a><a href="#dove"><i>05</i>Orari e dove</a></nav>
+ <div class="mfoot"><a class="mtel" href="tel:+393293920038">329 392 0038</a><p class="now" data-stato><i class="dot"></i><span class="t"></span></p><p>Corso Cavour 108/A, Cesena · <a href="https://www.instagram.com/cesena.stampe/" target="_blank" rel="noopener noreferrer">Instagram</a></p></div>
+</div>
 <main id="main">
 <section class="hero" id="top" aria-labelledby="h1">
  <div class="wrap hero-in">
@@ -297,18 +454,26 @@ html.calm [data-r],html.calm .hang,html.calm .hi,html.calm .qw{opacity:1!importa
    <div class="proof hi" style="--d:.32s"><a href="https://www.google.com/maps/search/?api=1&amp;query=Cesenastampe+Corso+Cavour+Cesena" target="_blank" rel="noopener noreferrer"><span class="stars" aria-hidden="true">★★★★★</span>4,6 su Google · 42 recensioni</a><span>Ritiro in negozio</span></div>
   </div>
   <div class="stage hi" style="--d:.12s"><span class="rail" aria-hidden="true"></span>
-   <div class="shirt-w"><svg class="hook" viewBox="0 0 60 34" aria-hidden="true"><path d="M30 18v-6a5 5 0 1 0-5-5M30 18L6 32h48z"/></svg><svg class="hshirt" viewBox="0 0 200 220" aria-hidden="true"><path class="gs" d="M72 22Q100 40 128 22L170 38L196 84L166 98L158 82V206H42V82L34 98L4 84L30 38Z" style="fill:#ffffff"/><path class="gd" d="M72 22Q100 46 128 22"/><g class="prt" style="clip-path:inset(0 0 100% 0)"><text x="100" y="94" text-anchor="middle" font-size="13" fill="#0E1A3D">DAI FORMA</text><text x="100" y="111" text-anchor="middle" font-size="13" fill="#1D3FA0">ALLE TUE IDEE</text><text x="100" y="128" text-anchor="middle" font-size="7.5" fill="#0E1A3D" letter-spacing="1.5">CESENA STAMPE</text></g><rect class="sq" x="58" y="74" width="84" height="6" rx="3" fill="#3ED6D1" style="opacity:0"/></svg></div>
-   <p class="note" aria-hidden="true">“Dai forma alle tue idee, noi le stampiamo per te!”</p>
+   <div class="shirt-w"><svg class="hook" viewBox="0 0 60 34" aria-hidden="true"><path d="M30 18v-6a5 5 0 1 0-5-5M30 18L6 32h48z"/></svg><button type="button" class="shirt-b" aria-label="Ristampa la maglia con un altro colore"><svg class="hshirt" viewBox="0 0 200 220" aria-hidden="true"><path class="gs" d="M72 22Q100 40 128 22L170 38L196 84L166 98L158 82V206H42V82L34 98L4 84L30 38Z" style="fill:#ffffff"/><path class="gd" d="M72 22Q100 46 128 22"/><g class="ly" data-l="0" style="clip-path:inset(0 0 100% 0)"><rect class="l0" x="57" y="101" width="86" height="16" rx="2"/></g><g class="ly" data-l="1" style="clip-path:inset(0 0 100% 0)"><text class="l1" x="100" y="96" text-anchor="middle" font-size="14">DAI FORMA</text></g><g class="ly" data-l="2" style="clip-path:inset(0 0 100% 0)"><text class="l2" x="100" y="113.5" text-anchor="middle" font-size="12.5">ALLE TUE IDEE</text><text class="l2" x="100" y="132" text-anchor="middle" font-size="7.5" letter-spacing="1.6">CESENA STAMPE</text></g><g class="reg" aria-hidden="true"><g transform="translate(52 78)"><circle r="3.4"/><path d="M-6.5 0H6.5M0-6.5V6.5"/></g><g transform="translate(148 78)"><circle r="3.4"/><path d="M-6.5 0H6.5M0-6.5V6.5"/></g><g transform="translate(52 142)"><circle r="3.4"/><path d="M-6.5 0H6.5M0-6.5V6.5"/></g><g transform="translate(148 142)"><circle r="3.4"/><path d="M-6.5 0H6.5M0-6.5V6.5"/></g></g><rect class="sq" x="56" y="74" width="88" height="6" rx="3" style="opacity:0"/></svg></button></div>
+   <p class="hn hn1" aria-hidden="true">Toccala:<br>la ristampo!<svg viewBox="0 0 120 70"><path pathLength="1" d="M8 10C40 4 78 18 96 52M84 48l13 6 3-14"/></svg></p>
+   <p class="hn hn2" aria-hidden="true"><svg viewBox="0 0 120 70"><path pathLength="1" d="M110 60C80 66 40 52 22 18M14 30l7-13 13 4"/></svg>Dai forma alle tue idee, noi le stampiamo per te!</p>
   </div>
  </div>
 </section>
-<div class="tape" aria-hidden="true"><ul><li>T-shirt</li><li>Felpe</li><li>Polo</li><li>Camicie</li><li>Cuscini</li><li>Mouse pad</li><li>Puzzle</li><li>Articoli sportivi</li><li>Gadget</li><li>T-shirt</li><li>Felpe</li><li>Polo</li><li>Camicie</li><li>Cuscini</li><li>Mouse pad</li><li>Puzzle</li><li>Articoli sportivi</li><li>Gadget</li></ul></div>
+<div class="tapes" aria-hidden="true"><div class="tape t1"><ul><li>T-shirt</li><li>Felpe</li><li>Polo</li><li>Camicie</li><li>Cuscini</li><li>Mouse pad</li><li>Puzzle</li><li>Articoli sportivi</li><li>Gadget</li><li>T-shirt</li><li>Felpe</li><li>Polo</li><li>Camicie</li><li>Cuscini</li><li>Mouse pad</li><li>Puzzle</li><li>Articoli sportivi</li><li>Gadget</li></ul></div><div class="tape t2"><ul><li>Fatte da Luda</li><li>Ritiro in negozio</li><li>Corso Cavour</li><li>Cesena</li><li>Dal lunedì al sabato</li><li>Disegnala sul sito</li><li>Fatte da Luda</li><li>Ritiro in negozio</li><li>Corso Cavour</li><li>Cesena</li><li>Dal lunedì al sabato</li><li>Disegnala sul sito</li><li>Fatte da Luda</li><li>Ritiro in negozio</li><li>Corso Cavour</li><li>Cesena</li><li>Dal lunedì al sabato</li><li>Disegnala sul sito</li></ul></div></div>
 
 <section class="sec" id="capi" aria-labelledby="capi-t">
  <div class="wrap">
   <div class="sec-h"><div><p class="kick">Cosa stampiamo</p><h2 id="capi-t" data-r>Scegli il capo,<br>al resto pensa Luda</h2></div><p data-r style="--d:.1s">Porti il logo della squadra, una foto, una scritta o solo un'idea: Luda la mette su quello che ti serve. Tocca un capo per provarlo qui sotto.</p></div>
-  <div class="rail-w"><div class="rail-bar" aria-hidden="true"></div><ul class="hangs"><li class="hang" style="--i:0"><button type="button" class="hang-b" data-capo="tshirt" aria-label="T-shirt: provala qui sotto"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M17 7q7 5 14 0l9 4 5 10-7 3-2-4v21H12V20l-2 4-7-3 5-10z"/></svg><b>T-shirt</b><i>prova</i></span></span></button></li><li class="hang" style="--i:1"><button type="button" class="hang-b" data-capo="polo" aria-label="Polo: provala qui sotto"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M17 7q7 3 14 0l9 4 5 10-7 3-2-4v21H12V20l-2 4-7-3 5-10z"/><path d="M17 7l6 7 1-5 1 5 6-7M24 14v8"/></svg><b>Polo</b><i>prova</i></span></span></button></li><li class="hang" style="--i:2"><button type="button" class="hang-b" data-capo="felpa" aria-label="Felpe: provala qui sotto"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M17 8q7 3 14 0l8 3q5 6 6 24l-6 1-3-14v20H12V22L9 36l-6-1q1-18 6-24z"/><path d="M17 8q7-8 14 0M16 34h16l2 7H14z"/></svg><b>Felpe</b><i>prova</i></span></span></button></li><li class="hang" style="--i:3"><button type="button" class="hang-b" data-capo="" aria-label="Cuscini"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10q16 5 32 0q-4 14 0 28q-16-5-32 0q4-14 0-28z"/><path d="M18 20q6 3 12 0"/></svg><b>Cuscini</b></span></span></button></li><li class="hang" style="--i:4"><button type="button" class="hang-b" data-capo="camicia" aria-label="Camicie: provala qui sotto"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 6l6 3 6-3 9 3q5 7 6 26l-6 1-3-14v22H12V22l-3 14-6-1q1-19 6-26z"/><path d="M18 6l4 6 2-3 2 3 4-6M24 9v35"/></svg><b>Camicie</b><i>prova</i></span></span></button></li><li class="hang" style="--i:5"><button type="button" class="hang-b" data-capo="" aria-label="Mouse pad"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="12" width="38" height="26" rx="5"/><path d="M28 18a5 5 0 0 1 10 0v8a5 5 0 0 1-10 0z M33 18v4"/></svg><b>Mouse pad</b></span></span></button></li><li class="hang" style="--i:6"><button type="button" class="hang-b" data-capo="" aria-label="Puzzle"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 14h8a4 4 0 1 1 8 0h8v8a4 4 0 1 0 0 8v8h-8a4 4 0 1 1-8 0h-8v-8a4 4 0 1 0 0-8z"/></svg><b>Puzzle</b></span></span></button></li><li class="hang" style="--i:7"><button type="button" class="hang-b" data-capo="" aria-label="Articoli sportivi"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16"/><path d="M24 16l7 5-3 8h-8l-3-8z M24 8v8M38 19l-7 2M33 37l-5-8M15 37l5-8M10 19l7 2"/></svg><b>Articoli sportivi</b></span></span></button></li></ul></div>
+  <div class="rail-w"><div class="rail-bar" aria-hidden="true"></div><ul class="hangs"><li class="hang" style="--i:0"><button type="button" class="hang-b" data-capo="tshirt" aria-label="T-shirt: provala qui sotto"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M17 7q7 5 14 0l9 4 5 10-7 3-2-4v21H12V20l-2 4-7-3 5-10z"/></svg><b>T-shirt</b><i>prova</i></span></span></button></li><li class="hang" style="--i:1"><button type="button" class="hang-b" data-capo="polo" aria-label="Polo: provala qui sotto"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M17 7q7 3 14 0l9 4 5 10-7 3-2-4v21H12V20l-2 4-7-3 5-10z"/><path pathLength="1" d="M17 7l6 7 1-5 1 5 6-7M24 14v8"/></svg><b>Polo</b><i>prova</i></span></span></button></li><li class="hang" style="--i:2"><button type="button" class="hang-b" data-capo="felpa" aria-label="Felpe: provala qui sotto"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M17 8q7 3 14 0l8 3q5 6 6 24l-6 1-3-14v20H12V22L9 36l-6-1q1-18 6-24z"/><path pathLength="1" d="M17 8q7-8 14 0M16 34h16l2 7H14z"/></svg><b>Felpe</b><i>prova</i></span></span></button></li><li class="hang" style="--i:3"><button type="button" class="hang-b" data-capo="" aria-label="Cuscini"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M8 10q16 5 32 0q-4 14 0 28q-16-5-32 0q4-14 0-28z"/><path pathLength="1" d="M18 20q6 3 12 0"/></svg><b>Cuscini</b></span></span></button></li><li class="hang" style="--i:4"><button type="button" class="hang-b" data-capo="camicia" aria-label="Camicie: provala qui sotto"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M18 6l6 3 6-3 9 3q5 7 6 26l-6 1-3-14v22H12V22l-3 14-6-1q1-19 6-26z"/><path pathLength="1" d="M18 6l4 6 2-3 2 3 4-6M24 9v35"/></svg><b>Camicie</b><i>prova</i></span></span></button></li><li class="hang" style="--i:5"><button type="button" class="hang-b" data-capo="" aria-label="Mouse pad"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect pathLength="1" x="5" y="12" width="38" height="26" rx="5"/><path pathLength="1" d="M28 18a5 5 0 0 1 10 0v8a5 5 0 0 1-10 0z M33 18v4"/></svg><b>Mouse pad</b></span></span></button></li><li class="hang" style="--i:6"><button type="button" class="hang-b" data-capo="" aria-label="Puzzle"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M10 14h8a4 4 0 1 1 8 0h8v8a4 4 0 1 0 0 8v8h-8a4 4 0 1 1-8 0h-8v-8a4 4 0 1 0 0-8z"/></svg><b>Puzzle</b></span></span></button></li><li class="hang" style="--i:7"><button type="button" class="hang-b" data-capo="" aria-label="Articoli sportivi"><span class="swing"><svg class="hook" viewBox="0 0 40 30" aria-hidden="true"><path d="M20 14v-4a4 4 0 1 0-4-4M20 14L3 26h34z"/></svg><span class="tag"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle pathLength="1" cx="24" cy="24" r="16"/><path pathLength="1" d="M24 16l7 5-3 8h-8l-3-8z M24 8v8M38 19l-7 2M33 37l-5-8M15 37l5-8M10 19l7 2"/></svg><b>Articoli sportivi</b></span></span></button></li></ul></div>
   <p class="rail-note">Fa anche gadget: chiedi in negozio cosa si può personalizzare.</p>
+ </div>
+</section>
+
+<section class="sec how" id="come" aria-labelledby="come-t">
+ <div class="wrap">
+  <div class="sec-h"><div><p class="kick">Come funziona</p><h2 id="come-t" data-r>Dall'idea alla maglia<br>in quattro passi</h2></div><p data-r style="--d:.1s">Non serve avere la grafica pronta. Basta sapere cosa vuoi: il resto lo sistemate insieme in negozio.</p></div>
+  <ol class="steps"><li class="step" data-r style="--d:0.00s"><span class="sn">01</span><svg class="si si-idea" viewBox="0 0 96 96" aria-hidden="true"><g class="rays"><path d="M48 6v8M18 17l6 6M78 17l-6 6M8 44h8M80 44h8"/></g><path d="M48 22a21 21 0 0 1 12.5 37.8c-3 2.3-4.5 5.2-4.5 8.7V71H40v-2.5c0-3.5-1.5-6.4-4.5-8.7A21 21 0 0 1 48 22z"/><path class="fil" d="M42 62V52l6-7 6 7v10"/><path d="M40 78h16M43 85h10"/></svg><h3>Hai un&#x27;idea</h3><p>Un logo, una foto, una scritta o solo un&#x27;idea: va bene tutto.</p></li><li class="step" data-r style="--d:0.09s"><span class="sn">02</span><svg class="si si-disegna" viewBox="0 0 96 96" aria-hidden="true"><path d="M33 22q15 9 30 0l17 7 8 18-12 5-4-7v39H28V45l-4 7-12-5 8-18z"/><path class="scr" pathLength="1" d="M36 56q6-8 12 0t12 0"/><g class="pen"><path d="M58 70l18-30 7 4-18 30-8 4z"/><path d="M73 45l7 4"/></g></svg><h3>La disegni</h3><p>Qui sotto con l&#x27;editor, oppure la spieghi a Luda in negozio.</p></li><li class="step" data-r style="--d:0.18s"><span class="sn">03</span><svg class="si si-stampa" viewBox="0 0 96 96" aria-hidden="true"><rect x="12" y="34" width="72" height="38" rx="3"/><path class="mesh" d="M18 40h60v26H18z"/><rect class="inkf" x="18" y="40" width="60" height="26"/><g class="rk"><rect x="16" y="26" width="9" height="52" rx="2.5"/><path d="M20.5 26V14"/></g></svg><h3>Luda la stampa</h3><p>Ti dice come farla, su quale capo e quanto costa.</p></li><li class="step" data-r style="--d:0.27s"><span class="sn">04</span><svg class="si si-ritira" viewBox="0 0 96 96" aria-hidden="true"><path d="M16 40v38h64V40"/><path d="M12 40h72l-7-16H19z"/><path class="aw" d="M12 40q6 9 12 0q6 9 12 0q6 9 12 0q6 9 12 0q6 9 12 0q6 9 12 0"/><rect x="40" y="56" width="16" height="22"/><g class="bag"><path d="M64 60h16l2 20H62z"/><path d="M67 60v-4a5 5 0 0 1 10 0v4"/></g></svg><h3>La ritiri</h3><p>In Corso Cavour 108/A, dal lunedì al sabato.</p></li></ol>
  </div>
 </section>
 
@@ -334,9 +499,13 @@ html.calm [data-r],html.calm .hang,html.calm .hi,html.calm .qw{opacity:1!importa
  </div>
  <div class="dz-panel">
   <div class="dz-tabs" role="tablist" aria-label="Strumenti">
-   <button type="button" role="tab" class="dtab on" data-tab="capo" aria-selected="true">Capo</button><button type="button" role="tab" class="dtab" data-tab="testo" aria-selected="false">Testo</button><button type="button" role="tab" class="dtab" data-tab="adesivi" aria-selected="false">Adesivi</button><button type="button" role="tab" class="dtab" data-tab="forme" aria-selected="false">Forme</button><button type="button" role="tab" class="dtab" data-tab="squadra" aria-selected="false">Squadra</button><button type="button" role="tab" class="dtab" data-tab="logo" aria-selected="false">Il tuo logo</button><button type="button" role="tab" class="dtab" data-tab="stile" aria-selected="false">Stile ed effetti</button>
+   <button type="button" role="tab" class="dtab on" data-tab="modelli" aria-selected="true">Modelli</button><button type="button" role="tab" class="dtab" data-tab="capo" aria-selected="false">Capo</button><button type="button" role="tab" class="dtab" data-tab="testo" aria-selected="false">Testo</button><button type="button" role="tab" class="dtab" data-tab="adesivi" aria-selected="false">Adesivi</button><button type="button" role="tab" class="dtab" data-tab="forme" aria-selected="false">Forme</button><button type="button" role="tab" class="dtab" data-tab="squadra" aria-selected="false">Squadra</button><button type="button" role="tab" class="dtab" data-tab="logo" aria-selected="false">Il tuo logo</button><button type="button" role="tab" class="dtab" data-tab="stile" aria-selected="false">Stile ed effetti</button>
   </div>
-  <div class="dpan on" data-pan="capo" role="tabpanel">
+  <div class="dpan on" data-pan="modelli" role="tabpanel">
+   <p class="dlb">Parti da un modello, poi cambia quello che vuoi</p><div class="dtpls" id="d-tpls"></div>
+   <p class="dnote">Nomi, numeri e scritte sono esempi: toccali sulla maglia e scrivi i tuoi.</p>
+  </div>
+  <div class="dpan" data-pan="capo" role="tabpanel" hidden>
    <p class="dlb">Capo</p><div class="dsegs"><button type="button" class="dseg on" data-garm="tshirt">T-shirt</button><button type="button" class="dseg" data-garm="polo">Polo</button><button type="button" class="dseg" data-garm="felpa">Felpa</button><button type="button" class="dseg" data-garm="canotta">Canotta</button></div>
    <p class="dlb">Colore del capo</p><div class="dsws"><button type="button" class="dsw" data-gcol="#ffffff" style="--c:#ffffff" aria-label="Bianco" title="Bianco"></button><button type="button" class="dsw" data-gcol="#17181c" style="--c:#17181c" aria-label="Nero" title="Nero"></button><button type="button" class="dsw" data-gcol="#14204a" style="--c:#14204a" aria-label="Blu notte" title="Blu notte"></button><button type="button" class="dsw" data-gcol="#1D3FA0" style="--c:#1D3FA0" aria-label="Blu royal" title="Blu royal"></button><button type="button" class="dsw" data-gcol="#8ec5ff" style="--c:#8ec5ff" aria-label="Celeste" title="Celeste"></button><button type="button" class="dsw" data-gcol="#cf2e2e" style="--c:#cf2e2e" aria-label="Rosso" title="Rosso"></button><button type="button" class="dsw" data-gcol="#6e1f2e" style="--c:#6e1f2e" aria-label="Bordeaux" title="Bordeaux"></button><button type="button" class="dsw" data-gcol="#1f7a45" style="--c:#1f7a45" aria-label="Verde" title="Verde"></button><button type="button" class="dsw" data-gcol="#ffd23f" style="--c:#ffd23f" aria-label="Giallo" title="Giallo"></button><button type="button" class="dsw" data-gcol="#f28c28" style="--c:#f28c28" aria-label="Arancio" title="Arancio"></button><button type="button" class="dsw" data-gcol="#a7adb8" style="--c:#a7adb8" aria-label="Grigio" title="Grigio"></button><button type="button" class="dsw" data-gcol="#3ED6D1" style="--c:#3ED6D1" aria-label="Turchese" title="Turchese"></button><label class="dpick" title="Scegli un altro colore"><input type="color" id="d-gpick" value="#ffffff"><span>Altro</span></label></div>
    <p class="dlb">Tessuto</p><div class="dsegs"><button type="button" class="dseg on" data-gtex="liscio">Tinta unita</button><button type="button" class="dseg" data-gtex="melange">Mélange</button><button type="button" class="dseg" data-gtex="tiedye">Tie-dye</button><button type="button" class="dseg" data-gtex="mimetico">Mimetico</button><button type="button" class="dseg" data-gtex="righe">Righe</button></div>
@@ -394,21 +563,21 @@ html.calm [data-r],html.calm .hang,html.calm .hi,html.calm .qw{opacity:1!importa
 
 <section class="sec" id="recensioni" aria-labelledby="rec-t">
  <div class="wrap rate">
-  <div class="score" data-r><p class="kick">Recensioni Google</p><b>4,6</b><div class="stars" aria-hidden="true">★★★★★</div><p id="rec-t">su 42 recensioni<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Cesenastampe+Corso+Cavour+Cesena" target="_blank" rel="noopener noreferrer">Leggile tutte su Google</a></p></div>
+  <div class="score" data-r><p class="kick">Recensioni Google</p><b>4,6</b><div class="stars stamp" aria-hidden="true"><i style="--k:0">★</i><i style="--k:1">★</i><i style="--k:2">★</i><i style="--k:3">★</i><i style="--k:4">★</i></div><p id="rec-t">su 42 recensioni<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Cesenastampe+Corso+Cavour+Cesena" target="_blank" rel="noopener noreferrer">Leggile tutte su Google</a></p></div>
   <div class="rvs"><figure class="rv" data-r style="--d:0.00s"><blockquote>“Ottime stampe! Luda è davvero molto disponibile e professionale. Consigliato.”</blockquote><figcaption><b>Matteo C.</b><span>Google · 1 mese fa</span></figcaption></figure><figure class="rv" data-r style="--d:0.08s"><blockquote>“Tutto perfetto. Maglie con stampa perfetta. Titolare disponibile e cordiale.”</blockquote><figcaption><b>Enrica M.</b><span>Google · 4 mesi fa</span></figcaption></figure><figure class="rv" data-r style="--d:0.16s"><blockquote>“Ragazzo molto gentile, super veloci e disponibili, veramente consigliato.”</blockquote><figcaption><b>Marco D.</b><span>Google · 3 mesi fa</span></figcaption></figure></div>
  </div>
 </section>
 
 <section class="sec visit" id="dove" aria-labelledby="dove-t">
  <div class="wrap visit-g">
-  <div><p class="kick">Orari</p><h2 id="dove-t" data-r>Passa in negozio</h2>
+  <div><p class="kick">Orari</p><div class="dove-h"><h2 id="dove-t" data-r>Passa in negozio</h2><div class="neon" aria-hidden="true"><svg class="chain" viewBox="0 0 120 30"><path d="M14 30L60 2L106 30"/><circle cx="60" cy="3" r="3"/></svg><span class="tube"><b>Aperto</b></span></div></div>
    <ul class="hours"><li data-d="0"><span>Lunedì</span><b>09:00–12:30 · 15:30–19:30</b></li><li data-d="1"><span>Martedì</span><b>09:00–12:30 · 15:30–19:30</b></li><li data-d="2"><span>Mercoledì</span><b>09:00–12:30 · 15:30–19:30</b></li><li data-d="3"><span>Giovedì</span><b>09:00–12:30 · 15:30–19:30</b></li><li data-d="4"><span>Venerdì</span><b>09:00–12:30 · 15:30–19:30</b></li><li data-d="5"><span>Sabato</span><b>09:00–12:30 · 15:30–19:30</b></li><li data-d="6"><span>Domenica</span><b>Chiuso</b></li></ul>
    <p class="now" data-stato><i class="dot"></i><span class="t"></span></p>
   </div>
   <div class="place"><p class="kick">Dove siamo</p><h3 data-r>Corso Cavour 108/A<br>47521 Cesena (FC)</h3>
    <div class="contacts"><a href="tel:+393293920038"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>329 392 0038</a><a href="mailto:cesenastampe@hotmail.com">cesenastampe@hotmail.com</a><a href="https://www.instagram.com/cesena.stampe/" target="_blank" rel="noopener noreferrer">Instagram @cesena.stampe</a></div>
    <div class="row"><a class="btn btn-go" href="https://www.google.com/maps/dir/?api=1&amp;destination=44.1422988,12.2496382" target="_blank" rel="noopener noreferrer"><span>Come arrivare</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></div>
-   <div class="mapbox"><button type="button" id="mapbtn"><b>Corso Cavour 108/A, Cesena</b><span>Mostra la mappa</span></button></div>
+   <div class="mapbox"><svg class="mapart" viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><mask id="mk-st"><path class="mkp" pathLength="1" d="M-10 215C30 205 46 130 72 96S150 34 196 76" stroke="#fff" stroke-width="10" fill="none"/></mask></defs><g class="streets"><path d="M-20 190Q120 168 210 140T420 96"/><path d="M96-20L136 270"/><path d="M300-20L262 270"/><path d="M-20 60Q140 70 420 30"/></g><path class="stitch" mask="url(#mk-st)" d="M-10 215C30 205 46 130 72 96S150 34 196 76"/><g transform="translate(200 62)"><g class="pin"><path d="M0 18C-10 6-14 0-14-7a14 14 0 0 1 28 0c0 7-4 13-14 25z"/><circle cy="-7" r="5"/></g></g></svg><button type="button" id="mapbtn"><b>Corso Cavour 108/A, Cesena</b><span>Mostra la mappa</span></button></div>
   </div>
  </div>
 </section>
@@ -420,6 +589,7 @@ html.calm [data-r],html.calm .hang,html.calm .hi,html.calm .qw{opacity:1!importa
  </div>
 </section>
 </main>
+<p class="bigw" aria-hidden="true"><span data-t="Cesena Stampe">Cesena Stampe</span></p>
 <footer class="foot"><div class="wrap"><span>© 2026 Cesena Stampe · Corso Cavour 108/A, 47521 Cesena (FC) · <a href="privacy.html">Privacy</a></span><button type="button" id="calm" aria-pressed="false">Ferma le animazioni</button></div></footer>
 <div class="mbar"><a class="btn btn-go" href="tel:+393293920038"><span>Chiama</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a><a class="btn btn-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=44.1422988,12.2496382" target="_blank" rel="noopener noreferrer"><span>Come arrivare</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></div>
 <script>
@@ -438,28 +608,33 @@ html.calm [data-r],html.calm .hang,html.calm .hi,html.calm .qw{opacity:1!importa
   for(var k=1;k<8;k++){var dd=(t.d+k)%7,s2=ORARI[dd]||[];if(s2.length)return {open:false,txt:'Chiuso ora · riapre '+(k===1?'domani':GIORNI[dd].toLowerCase())+' alle '+s2[0][0],d:t.d}}
   return {open:false,txt:'',d:t.d}}
  run(function(){var s=stato();[].forEach.call(document.querySelectorAll('[data-stato]'),function(el){el.classList.toggle('open',s.open);var t=el.querySelector('.t');if(t)t.textContent=s.txt});
-  var li=document.querySelector('.hours li[data-d="'+s.d+'"]');if(li)li.classList.add('today')});
+  var li=document.querySelector('.hours li[data-d="'+s.d+'"]');if(li)li.classList.add('today');
+  var ne=document.querySelector('.neon');if(ne){ne.classList.toggle('open',s.open);ne.querySelector('b').textContent=s.open?'Aperto':'Chiuso'}});
 
  run(function(){var h=document.querySelector('.hdr'),bar=document.querySelector('.mbar'),hero=document.querySelector('.hero'),logo=document.querySelector('.hdr .logo'),tk=false;
-  function u(){tk=false;var y=scrollY;h.classList.toggle('sc',y>8);if(bar)bar.classList.toggle('on',y>hero.offsetHeight*.5);if(logo&&!calm())logo.style.transform='rotate('+(Math.sin(y/140)*9).toFixed(2)+'deg)'}
+  var pg=document.querySelector('.prog');function u(){tk=false;var y=scrollY,mx=document.documentElement.scrollHeight-innerHeight;if(pg)pg.style.transform='scaleX('+(mx>0?Math.min(1,y/mx):0).toFixed(4)+')';h.classList.toggle('sc',y>8);if(bar)bar.classList.toggle('on',y>hero.offsetHeight*.5);if(logo&&!calm())logo.style.transform='rotate('+(Math.sin(y/140)*9).toFixed(2)+'deg)'}
   addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(u)}},{passive:true});u()});
 
- // hero: entrata, parola che cambia, maglia che si stampa
- run(function(){var hi=document.querySelector('.hero-in');requestAnimationFrame(function(){hi.classList.add('go')});
-  var rot=document.querySelector('.rot'),words=["t-shirt", "felpa", "polo", "maglia di squadra", "idea"],cols=["#ffffff", "#0E1A3D", "#3ED6D1", "#D93A3A"],i=0;
-  var shirt=document.querySelector('.hshirt .gs'),prt=document.querySelector('.hshirt .prt'),sq=document.querySelector('.hshirt .sq'),pt=[].slice.call(document.querySelectorAll('.hshirt .prt text'));
-  function print(c){var dark=(c==='#0E1A3D'||c==='#D93A3A');pt.forEach(function(t){t.style.fill=dark?'#fff':'#0E1A3D'});pt[1].style.fill=dark?'#3ED6D1':'#1D3FA0';
-   if(calm()){prt.style.clipPath='none';return}
-   prt.style.transition='none';prt.style.clipPath='inset(0 0 100% 0)';sq.style.transition='none';sq.style.transform='translateY(0)';sq.style.opacity='1';void prt.offsetWidth;
-   prt.style.transition='';sq.style.transition='';prt.style.clipPath='inset(0 0 0% 0)';sq.style.transform='translateY(88px)';setTimeout(function(){sq.style.opacity='0'},900)}
-  setTimeout(function(){print(cols[0])},500);
-  if(calm())return;
-  setInterval(function(){if(document.hidden||calm())return;i=(i+1)%words.length;var old=rot.querySelector('i'),n=document.createElement('i');n.textContent=words[i];n.className='in0';rot.appendChild(n);
-   void n.offsetWidth;n.className='';old.classList.add('out');setTimeout(function(){old.remove()},600);
-   var c=cols[i%cols.length];shirt.style.fill=c;print(c)},2800)});
+ // hero: entrata, parola che cambia, maglia stampata a strati
+ run(function(){var hi=document.querySelector('.hero-in'),intro=html.classList.contains('is-intro'),D=intro?820:0;setTimeout(function(){hi.classList.add('go')},D);
+  if(intro)setTimeout(function(){html.classList.remove('is-intro')},1700);
+  var rot=document.querySelector('.rot'),words=["t-shirt", "felpa", "polo", "maglia di squadra", "idea"],cols=["#ffffff", "#0E1A3D", "#3ED6D1", "#D93A3A"],i=0,pT=0;
+  var shirt=document.querySelector('.hshirt .gs'),L=[].slice.call(document.querySelectorAll('.hshirt .ly')),sq=document.querySelector('.hshirt .sq'),reg=document.querySelector('.hshirt .reg');
+  var INK={'#ffffff':['#3ED6D1','#1D3FA0','#0E1A3D'],'#0E1A3D':['#3ED6D1','#ffffff','#0E1A3D'],'#3ED6D1':['#ffffff','#1D3FA0','#0E1A3D'],'#D93A3A':['#ffffff','#ffffff','#0E1A3D']};
+  function colorize(c){var k=INK[c]||INK['#ffffff'];document.querySelector('.hshirt .l0').style.fill=k[0];document.querySelector('.hshirt .l1').style.fill=k[1];[].forEach.call(document.querySelectorAll('.hshirt .l2'),function(t,n){t.style.fill=n&&c!=='#ffffff'&&c!=='#3ED6D1'?'#ffffff':k[2]});return k}
+  function print(c){var k=colorize(c);clearTimeout(pT);
+   if(calm()){L.forEach(function(l){l.style.clipPath='none';l.style.transform='none'});reg.style.opacity=0;sq.style.opacity=0;return}
+   L.forEach(function(l){l.style.transition='none';l.style.clipPath='inset(0 0 100% 0)';l.style.transform='translate(2.4px,-1.6px)'});reg.style.transition='opacity .25s';reg.style.opacity='1';void sq.getBoundingClientRect();
+   (function step(n){if(n>2){pT=setTimeout(function(){reg.style.opacity='0';sq.style.opacity='0'},220);return}var l=L[n];sq.style.transition='none';sq.style.fill=k[n];sq.style.transform='translateY(0)';sq.style.opacity='1';void sq.getBoundingClientRect();
+    sq.style.transition='transform .46s cubic-bezier(.77,0,.175,1)';sq.style.transform='translateY(70px)';l.style.transition='clip-path .46s cubic-bezier(.77,0,.175,1),transform .22s cubic-bezier(.23,1,.32,1) .46s';l.style.clipPath='inset(0 0 0% 0)';l.style.transform='none';pT=setTimeout(function(){step(n+1)},520)})(0)}
+  function next(){i=(i+1)%words.length;var old=rot.querySelector('i'),n=document.createElement('i');n.textContent=words[i];n.className='in0';rot.appendChild(n);
+   void n.offsetWidth;n.className='';old.classList.add('out');setTimeout(function(){old.remove()},600);var c=cols[i%cols.length];shirt.style.fill=c;print(c)}
+  setTimeout(function(){print(cols[0])},500+D);
+  var tm=0;function loop(){clearInterval(tm);if(calm())return;tm=setInterval(function(){if(document.hidden||calm())return;next()},3400)}loop();
+  var b=document.querySelector('.shirt-b');if(b)b.addEventListener('click',function(){next();loop();var w=document.querySelector('.shirt-w');if(w.animate&&!calm())w.animate([{transform:'rotate(0)'},{transform:'rotate(-6deg)'},{transform:'rotate(3deg)'},{transform:'rotate(0)'}],{duration:700,easing:'cubic-bezier(.23,1,.32,1)',composite:'add'})})});
 
  // reveal
- run(function(){var els=[].slice.call(document.querySelectorAll('[data-r],.hangs'));if(!('IntersectionObserver' in window)){els.forEach(function(x){x.classList.add('in')});return}
+ run(function(){var els=[].slice.call(document.querySelectorAll('[data-r],.hangs,.steps,.neon,.mapbox,.bigw'));if(!('IntersectionObserver' in window)){els.forEach(function(x){x.classList.add('in')});return}
   var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -6% 0px'});
   els.forEach(function(x){io.observe(x)});addEventListener('load',function(){setTimeout(function(){els.forEach(function(x){if(x.getBoundingClientRect().top<innerHeight)x.classList.add('in')})},1200)})});
 
@@ -467,6 +642,32 @@ html.calm [data-r],html.calm .hang,html.calm .hi,html.calm .qw{opacity:1!importa
  run(function(){var ws=[].slice.call(document.querySelectorAll('.qw'));if(!ws.length)return;if(calm()){ws.forEach(function(w){w.classList.add('lit')});return}var q=document.querySelector('.quote blockquote'),tk=false;
   function u(){tk=false;var r=q.getBoundingClientRect(),p=Math.min(1,Math.max(0,(innerHeight*.85-r.top)/(innerHeight*.55)));var n=Math.round(p*ws.length);ws.forEach(function(w,i){w.classList.toggle('lit',i<n)})}
   addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(u)}},{passive:true});u()});
+
+
+ // icone di "Come funziona" animate solo quando si vedono
+ run(function(){var how=document.querySelector('.how');if(!how||!('IntersectionObserver' in window))return;new IntersectionObserver(function(es){how.classList.toggle('live',es[0].isIntersecting&&!calm())},{rootMargin:'-10% 0px'}).observe(how)});
+
+ // cursore a forma di racla (solo mouse)
+ run(function(){var c=document.querySelector('.cur');if(!c||!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+  var x=-100,y=-100,tx=-100,ty=-100,raf=0,on=false;
+  function enable(v){on=v&&!calm();html.classList.toggle('has-cur',on)}enable(true);
+  function tick(){x+=(tx-x)*.35;y+=(ty-y)*.35;c.style.transform='translate3d('+x.toFixed(1)+'px,'+y.toFixed(1)+'px,0)';raf=Math.abs(tx-x)+Math.abs(ty-y)>.2?requestAnimationFrame(tick):0}
+  addEventListener('pointermove',function(e){if(e.pointerType!=='mouse')return;if(calm()){if(on)enable(false);return}if(!on)enable(true);tx=e.clientX;ty=e.clientY;if(x<-50){x=tx;y=ty}
+   var t=e.target,off=!!(t.closest&&t.closest('.dz,input,textarea,select,iframe,.mpanel'));c.classList.toggle('off',off);
+   c.classList.toggle('lab',!!(t.closest&&t.closest('.hang-b:not([data-capo=""]),.shirt-b')));c.classList.toggle('hot',!!(t.closest&&t.closest('a,button,label,[role=tab]')));
+   c.querySelector('b').textContent=t.closest&&t.closest('.shirt-b')?'Ristampa':'Provala';if(!raf)raf=requestAnimationFrame(tick)},{passive:true});
+  addEventListener('pointerdown',function(){c.classList.add('down')});addEventListener('pointerup',function(){c.classList.remove('down')});
+  document.addEventListener('mouseout',function(e){if(!e.relatedTarget)c.classList.add('off')})});
+
+ // menu del telefono che si apre a cerchio
+ run(function(){var b=document.querySelector('.mnu'),p=document.getElementById('mpanel');if(!b||!p)return;var x=p.querySelector('.mclose');
+  function open(){var r=b.getBoundingClientRect();p.style.setProperty('--ox',(r.left+r.width/2)+'px');p.style.setProperty('--oy',(r.top+r.height/2)+'px');p.style.setProperty('--cx',r.left+'px');p.style.setProperty('--cy',r.top+'px');
+   p.hidden=false;html.classList.add('mopen');b.setAttribute('aria-expanded','true');requestAnimationFrame(function(){requestAnimationFrame(function(){p.classList.add('open')})});setTimeout(function(){x.focus()},calm()?0:300)}
+  function close(back){p.classList.remove('open');html.classList.remove('mopen');b.setAttribute('aria-expanded','false');setTimeout(function(){if(!p.classList.contains('open'))p.hidden=true},calm()?0:560);if(back)b.focus()}
+  b.addEventListener('click',open);x.addEventListener('click',function(){close(true)});
+  [].forEach.call(p.querySelectorAll('.mlinks a'),function(a){a.addEventListener('click',function(){close(false)})});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!p.hidden)close(true);if(e.key==='Tab'&&!p.hidden){var f=[].slice.call(p.querySelectorAll('a,button')),i=f.indexOf(document.activeElement);if(e.shiftKey&&i<=0){e.preventDefault();f[f.length-1].focus()}else if(!e.shiftKey&&i===f.length-1){e.preventDefault();f[0].focus()}}});
+  matchMedia('(min-width:961px)').addEventListener&&matchMedia('(min-width:961px)').addEventListener('change',function(m){if(m.matches&&!p.hidden)close(false)})});
 
 
  run(function(){
@@ -548,8 +749,11 @@ html.calm [data-r],html.calm .hang,html.calm .hi,html.calm .qw{opacity:1!importa
   function btns(){document.getElementById('d-undo').disabled=!hist.length;document.getElementById('d-redo').disabled=!fut.length}
   function save(){try{localStorage.setItem('cs-design',JSON.stringify(st))}catch(e){}summary()}
   // ---- aggiunta elementi
-  function add(e){snap();e.id=uid++;e.x=e.x||CX;e.y=e.y||CY-40;e.s=e.s||1;e.r=e.r||0;cur().push(e);sel=e.id;render();hint.classList.add('off');pop(e.id)}
-  function pop(id){if(reduced||html.classList.contains('calm'))return;var g=svg.querySelector('.el[data-id="'+id+'"] .c');if(g&&g.animate)g.animate([{transform:'scale(.6)',opacity:0},{transform:'scale(1.06)',opacity:1,offset:.7},{transform:'scale(1)'}],{duration:320,easing:'cubic-bezier(.23,1,.32,1)'})}
+  function add(e){snap();e.id=uid++;e.x=e.x||CX;e.y=e.y||CY-40;e.s=e.s||1;e.r=e.r||0;cur().push(e);sel=e.id;render();hint.classList.add('off');e.type==='sticker'?drop(e.id):pop(e.id)}
+  function still(){return reduced||html.classList.contains('calm')}
+  function drop(id,dl){if(still())return;var g=svg.querySelector('.el[data-id="'+id+'"] .c');if(g&&g.animate)g.animate([{transform:'translate(0,-90px) scale(1.35) rotate(-14deg)',opacity:0},{transform:'translate(0,0) scale(1.12,.86) rotate(2deg)',opacity:1,offset:.55},{transform:'scale(.95,1.05)',offset:.75},{transform:'none',opacity:1}],{duration:560,delay:dl||0,easing:'cubic-bezier(.23,1,.32,1)',fill:'backwards'})}
+  function stitch(id){if(still())return;var g=svg.querySelector('.el[data-id="'+id+'"] .c');if(g&&g.animate)g.animate([{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)'}],{duration:1100,easing:'steps(16,end)'})}
+  function pop(id,dl){if(reduced||html.classList.contains('calm'))return;var g=svg.querySelector('.el[data-id="'+id+'"] .c');if(g&&g.animate)g.animate([{transform:'scale(.6)',opacity:0},{transform:'scale(1.06)',opacity:1,offset:.7},{transform:'scale(1)',opacity:1}],{duration:320,delay:dl||0,easing:'cubic-bezier(.23,1,.32,1)',fill:'backwards'})}
   function inkDefault(){return dark()?'#ffffff':'#111111'}
   document.getElementById('d-addtxt').addEventListener('click',function(){var v=document.getElementById('d-txt').value.trim()||'LA TUA SCRITTA';var e=sel&&find(sel);if(e&&e.type==='text'&&document.getElementById('d-txt').dataset.edit==='1'){snap();e.text=v;render();return}add({type:'text',text:v,font:curFont,color:inkDefault(),fill:'solid',s:v.length>14?.7:1})});
   var curFont='Cabinet Grotesk';
@@ -566,7 +770,7 @@ html.calm [data-r],html.calm .hang,html.calm .hi,html.calm .qw{opacity:1!importa
    r.addEventListener('input',function(){o.textContent=r.value;var e=sel&&find(sel);if(e&&ok(e)){e[key]=+r.value;render()}})}
   on('[data-stroke]','click',function(b){var e=sel&&find(sel);if(!e)return;snap();e.stroke=b.dataset.stroke;if(!e.sw)e.sw=4;render();mark('[data-stroke]',b)});
   on('[data-fill]','click',function(b){var e=sel&&find(sel);if(!e||(e.type!=='text'&&e.type!=='shape'))return;snap();e.fill=b.dataset.fill;render();mark('[data-fill]',b)});
-  on('[data-fx]','click',function(b){var e=sel&&find(sel);if(!e)return;snap();e.fx=b.dataset.fx;render();mark('[data-fx]',b)});
+  on('[data-fx]','click',function(b){var e=sel&&find(sel);if(!e)return;snap();e.fx=b.dataset.fx;render();mark('[data-fx]',b);if(e.fx==='ricamo')stitch(e.id)});
   on('[data-shape]','click',function(b){add({type:'shape',shape:b.dataset.shape,color:st.col.toLowerCase()==='#1d3fa0'?'#3ED6D1':'#1D3FA0',fill:'solid',s:1})});
   on('[data-sticker]','click',function(b){add({type:'sticker',sticker:b.dataset.sticker,s:.9})});
   on('[data-badge]','click',function(b){var t=TEAMS[lastTeam]||TEAMS[0];add({type:'badge',badge:b.dataset.badge,ini:document.getElementById('d-ini').value.trim()||'CS',year:document.getElementById('d-year').value.trim(),color:t[2],color2:t[1]==='#ffffff'&&t[2]==='#ffffff'?'#111':t[1],s:b.dataset.badge==='fascia'?1:1.1})});
@@ -652,11 +856,30 @@ html.calm [data-r],html.calm .hang,html.calm .hi,html.calm .qw{opacity:1!importa
    return await new Promise(function(r){c.toBlob(r,'image/png')})}
   function download(blob){var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='idea-cesena-stampe.png';document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},1500)}
   document.getElementById('d-dl').addEventListener('click',async function(){this.disabled=true;try{download(await makePNG())}finally{this.disabled=false}});
-  document.getElementById('d-send').addEventListener('click',async function(ev){var mail=this.href;ev.preventDefault();var blob=await makePNG();var file=new File([blob],'idea-cesena-stampe.png',{type:'image/png'});var text='Ciao Luda, ho preparato questa idea sul sito di Cesena Stampe:\n- '+sumText().join('\n- ');
+  function fly(){if(still()||!svg.animate)return;var cv=document.querySelector('.dz-canvas'),env=document.createElement('div');env.className='d-env';env.setAttribute('aria-hidden','true');env.innerHTML='<svg viewBox="0 0 120 80"><rect class="eb" x="2" y="12" width="116" height="66" rx="6"/><path class="ef" d="M2 74l44-30M118 74L74 44"/><path class="fl" d="M2 12h116L60 52z"/></svg>';cv.appendChild(env);
+   svg.animate([{transform:'none',opacity:1},{transform:'translateY(4%) scale(.62,.5)',opacity:1,offset:.18},{transform:'translateY(14%) scale(.3,.12)',opacity:0,offset:.36},{transform:'none',opacity:0,offset:.8},{transform:'none',opacity:1}],{duration:1600,easing:'cubic-bezier(.77,0,.175,1)'});
+   env.animate([{opacity:0,transform:'translate(-50%,40px) scale(.7)'},{opacity:1,transform:'translate(-50%,0) scale(1)',offset:.3},{opacity:1,transform:'translate(-50%,0) scale(1)',offset:.62},{opacity:0,transform:'translate(90%,-220%) rotate(-16deg) scale(.55)'}],{duration:1500,easing:'cubic-bezier(.65,0,.35,1)'}).onfinish=function(){env.remove();var t=document.createElement('p');t.className='d-toast';t.textContent='Idea pronta per '+'Luda';cv.appendChild(t);t.animate([{opacity:0,transform:'translate(-50%,8px)'},{opacity:1,transform:'translate(-50%,0)'}],{duration:240,easing:'cubic-bezier(.23,1,.32,1)'});setTimeout(function(){t.animate([{opacity:1},{opacity:0}],{duration:300}).onfinish=function(){t.remove()}},1800)};}
+  document.getElementById('d-send').addEventListener('click',async function(ev){var mail=this.href;ev.preventDefault();fly();var blob=await makePNG();var file=new File([blob],'idea-cesena-stampe.png',{type:'image/png'});var text='Ciao Luda, ho preparato questa idea sul sito di Cesena Stampe:\n- '+sumText().join('\n- ');
    if(navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],title:'Idea per Cesena Stampe',text:text});return}catch(e){if(e&&e.name==='AbortError')return}}download(blob);setTimeout(function(){location.href=mail},400)});
   window.__csSetCapo=function(k){var m={tshirt:'tshirt',polo:'polo',felpa:'felpa',camicia:'polo'};var b=document.querySelector('[data-garm="'+(m[k]||'tshirt')+'"]');if(b)b.click();openTab('capo')};
   var tabs=document.querySelector('.dz-tabs'),panel=document.querySelector('.dz-panel'),stage=document.querySelector('.dz-stage'),mq=matchMedia('(max-width:980px)');function placeTabs(){if(mq.matches){if(tabs.parentNode!==stage)stage.appendChild(tabs)}else if(tabs.parentNode!==panel)panel.insertBefore(tabs,panel.firstChild)}placeTabs();mq.addEventListener&&mq.addEventListener('change',placeTabs);
   if('IntersectionObserver' in window){var io2=new IntersectionObserver(function(es){document.body.classList.toggle('in-dz',es[0].isIntersecting)},{rootMargin:'-30% 0px -10% 0px'});io2.observe(document.querySelector('.dz-panel'))}
+  // ---- modelli pronti
+  var TPL=[
+   {n:'Squadra di calcetto',garm:'tshirt',col:'#ffffff',tex:'liscio',front:[{type:'badge',badge:'scudo',ini:'ASD',year:'',color:'#1D3FA0',color2:'#ffffff',x:CX+78,y:PA.y+62,s:.5},{type:'text',text:'CALCETTO',font:'Graduate',color:'#1D3FA0',fill:'solid',curve:30,space:2,x:CX,y:CY,s:.8}],back:[{type:'text',jersey:1,text:'NOME',font:'Graduate',color:'#1D3FA0',fill:'solid',curve:22,space:4,x:CX,y:PA.y+70,s:1},{type:'text',jersey:1,text:'10',font:'Graduate',color:'#1D3FA0',fill:'solid',sw:5,stroke:'#ffffff',x:CX,y:PA.y+215,s:3.4}]},
+   {n:'Basket',garm:'canotta',col:'#1D3FA0',tex:'liscio',front:[{type:'text',text:'BASKET',font:'Bungee',color:'#ffd23f',fill:'solid',curve:40,space:2,x:CX,y:CY-50,s:.9},{type:'sticker',sticker:'basket',x:CX,y:CY+80,s:.85}],back:[{type:'text',jersey:1,text:'NOME',font:'Graduate',color:'#ffd23f',fill:'solid',curve:22,space:4,x:CX,y:PA.y+70,s:1},{type:'text',jersey:1,text:'23',font:'Graduate',color:'#ffd23f',fill:'solid',sw:5,stroke:'#14204a',x:CX,y:PA.y+215,s:3.4}]},
+   {n:'Addio al celibato',garm:'tshirt',col:'#17181c',tex:'liscio',front:[{type:'sticker',sticker:'corona',x:CX,y:PA.y+55,s:.6},{type:'text',text:'ADDIO AL',font:'Permanent Marker',color:'#ffffff',fill:'solid',x:CX,y:CY-45,s:.8},{type:'text',text:'CELIBATO',font:'Permanent Marker',color:'#ffffff',fill:'oro',x:CX,y:CY+20,s:.95}],back:[{type:'text',text:'TEAM SPOSO',font:'Bebas Neue',color:'#ffffff',fill:'solid',space:4,x:CX,y:PA.y+90,s:1.25}]},
+   {n:'Staff evento',garm:'polo',col:'#14204a',tex:'liscio',front:[{type:'text',text:'STAFF',font:'Cabinet Grotesk',color:'#ffffff',fill:'solid',space:3,x:CX+76,y:PA.y+60,s:.55}],back:[{type:'text',text:'STAFF',font:'Anton',color:'#3ED6D1',fill:'solid',space:6,x:CX,y:PA.y+120,s:1.9},{type:'text',text:'IL TUO EVENTO',font:'Cabinet Grotesk',color:'#ffffff',fill:'solid',space:4,x:CX,y:PA.y+225,s:.8}]},
+   {n:'Cesena bianconera',garm:'tshirt',col:'#ffffff',tex:'liscio',front:[{type:'shape',shape:'stella',color:'#111111',fill:'solid',x:CX,y:CY-110,s:.38},{type:'text',text:'CESENA',font:'Graduate',color:'#111111',fill:'solid',curve:34,space:3,x:CX,y:CY-10,s:1.05},{type:'text',text:'ROMAGNA',font:'Bebas Neue',color:'#111111',fill:'solid',space:10,x:CX,y:CY+70,s:.8}],back:[]},
+   {n:'Gruppo in bici',garm:'canotta',col:'#ffffff',tex:'righe',front:[{type:'sticker',sticker:'bici',x:CX,y:CY-30,s:1.05},{type:'text',text:'IN SELLA',font:'Bungee',color:'#cf2e2e',fill:'solid',x:CX,y:CY+90,s:.95}],back:[]},
+   {n:'Estate tie-dye',garm:'tshirt',col:'#ffffff',tex:'tiedye',front:[{type:'sticker',sticker:'palma',x:CX,y:CY-40,s:.85},{type:'text',text:'Riviera',font:'Lobster',color:'#ffffff',fill:'solid',sw:5,stroke:'#14204a',x:CX,y:CY+80,s:1.3}],back:[]}
+  ];
+  function thumb(t,i){var keep=st;st={garm:t.garm,col:t.col,tex:t.tex,side:'t'+i,els:{}};st.els['t'+i]=t.front.map(function(e,j){var c=JSON.parse(JSON.stringify(e));c.id='t'+i+'_'+j;c.r=0;return c});
+   var g=garment().replace(/id="c-g"/g,'id="c-g-t'+i+'"').replace(/url\(#c-g\)/g,'url(#c-g-t'+i+')'),o='<svg viewBox="0 0 600 660" aria-hidden="true">'+g+'<g clip-path="url(#c-pa)">'+st.els['t'+i].map(function(e){return '<g transform="'+tr(e)+'">'+content(e)+'</g>'}).join('')+'</g></svg>';st=keep;return o}
+  function applyTpl(t){snap();st={garm:t.garm,col:t.col,tex:t.tex,side:'front',els:{front:[],back:[]}};['front','back'].forEach(function(s){st.els[s]=t[s].map(function(e){var c=JSON.parse(JSON.stringify(e));c.id=uid++;c.r=c.r||0;return c})});sel=null;render();markAll();hint.classList.add('off');
+   st.els.front.forEach(function(e,k){e.type==='sticker'?drop(e.id,k*90):pop(e.id,k*90)})}
+  run(function(){var box=document.getElementById('d-tpls');box.innerHTML=TPL.map(function(t,i){return '<button type="button" class="dtpl" data-tpl="'+i+'">'+thumb(t,i)+'<span>'+esc(t.n)+'</span></button>'}).join('');
+   [].forEach.call(box.querySelectorAll('[data-tpl]'),function(b){b.addEventListener('click',function(){applyTpl(TPL[+b.dataset.tpl]);if(matchMedia('(max-width:980px)').matches)document.querySelector('.dz-stage').scrollIntoView({behavior:still()?'auto':'smooth',block:'start'})})})});
   if(st.els.front.length||st.els.back.length)hint.classList.add('off');
   render();markAll();btns();
  });
